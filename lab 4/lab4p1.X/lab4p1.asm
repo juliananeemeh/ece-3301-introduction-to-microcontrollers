@@ -1,0 +1,39 @@
+#include<P18F4620.inc>
+config OSC = INTIO67
+config WDT = OFF
+config LVP = OFF
+config BOREN = OFF
+    
+InA equ 0x20	   ; declare as memory location
+InB equ 0x21
+Result equ 0x22
+
+ORG 0x0000
+ 
+START:
+    
+    MOVLW 0x0F
+    MOVWF ADCON1	   ; pins in digital mode
+
+    MOVLW 0xFF		   ; inputs
+    MOVWF TRISA
+    MOVWF TRISB
+
+    MOVLW 0x00		   ; outputs
+    MOVWF TRISC
+    MOVWF TRISD
+
+    MOVLW 0x07		   ; input only bit 0-2
+    MOVWF TRISE
+
+MAIN_LOOP:
+    MOVF PORTA, W	   ; read content of PORTA and store in W
+    ANDLW 0x0F		   ; and W with 0x0F to mask upper 4 bits
+    MOVWF InA		   ; move W to InA
+
+    COMF InA, W		   ; 1's complement InA store in W
+    ANDLW 0x0F		   ; and W with 0x0F to mask upper 4 bits
+    MOVWF Result	   ; move W to Result
+    MOVFF Result,PORTC	   ; copy Result to PORTC
+GOTO MAIN_LOOP
+END
