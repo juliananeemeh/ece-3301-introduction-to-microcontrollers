@@ -1,0 +1,1436 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\lab10.X.production.obj
+cinit CODE 0 ECE ECE 82 1
+intcode_body CODE 0 FCE FCE 7C 1
+text0 CODE 0 22E 22E 1B8 1
+text1 CODE 0 1C 1C 212 1
+text2 CODE 0 1504 1504 E 1
+text3 CODE 0 1264 1264 4C 1
+text4 CODE 0 10BA 10BA 5C 1
+text5 CODE 0 1116 1116 5A 1
+text6 CODE 0 864 864 138 1
+text7 CODE 0 3E6 3E6 1AE 1
+text8 CODE 0 151E 151E A 1
+text9 CODE 0 1466 1466 1A 1
+text10 CODE 0 D92 D92 B4 1
+text11 CODE 0 1376 1376 32 1
+text12 CODE 0 144A 144A 1C 1
+text13 CODE 0 CB6 CB6 DC 1
+text14 CODE 0 99C 99C 118 1
+text15 CODE 0 12FA 12FA 3E 1
+text16 CODE 0 70E 70E 156 1
+text17 CODE 0 12B0 12B0 4A 1
+text18 CODE 0 E46 E46 88 1
+text19 CODE 0 13A8 13A8 30 1
+text20 CODE 0 1216 1216 4E 1
+text21 CODE 0 13D8 13D8 2A 1
+text22 CODE 0 BC4 BC4 F2 1
+text23 CODE 0 1338 1338 3E 1
+text24 CODE 0 AB4 AB4 110 1
+text25 CODE 0 14E4 14E4 10 1
+text26 CODE 0 14F4 14F4 10 1
+text27 CODE 0 1498 1498 14 1
+text28 CODE 0 14C0 14C0 12 1
+text29 CODE 0 11C4 11C4 52 1
+text30 CODE 0 1402 1402 28 1
+text31 CODE 0 14AC 14AC 14 1
+text32 CODE 0 104A 104A 70 1
+text33 CODE 0 1480 1480 18 1
+text34 CODE 0 1538 1538 6 1
+text35 CODE 0 1528 1528 8 1
+text36 CODE 0 14D2 14D2 12 1
+text38 CODE 0 1512 1512 C 1
+text39 CODE 0 594 594 17A 1
+text40 CODE 0 1530 1530 8 1
+idataCOMRAM CODE 0 142A 142A 20 1
+cstackCOMRAM COMRAM 1 1 1 3D 1
+cstackBANK0 BANK0 1 F3 F3 8 1
+cstackBANK1 BANK1 1 17E 17E 7 1
+bssBANK0 BANK0 1 D4 D4 1F 1
+intcode CODE 0 8 8 10 1
+idataBANK0 CODE 0 1170 1170 54 1
+idataBANK1 CODE 0 F50 F50 7E 1
+dataBANK0 BANK0 1 80 80 54 1
+dataBANK1 BANK1 1 100 100 7E 1
+dataCOMRAM COMRAM 1 3E 3E 20 1
+bssCOMRAM COMRAM 1 5E 5E 12 1
+mediumconst MEDIUMCONST 0 FDCE FDCE 232 1
+$C:\Users\julia\AppData\Local\Temp\s8nc.obj
+idloc IDLOC 0 200000 200000 8 1
+reset_vec CODE 0 0 0 4 1
+end_init CODE 0 18 18 4 1
+config CONFIG 0 300000 300000 E 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM FB-FF 1
+RAM 185-F7F 1
+SFR F80-FFF 1
+BANK0 FB-FF 1
+BANK1 185-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 4-7 1
+CONST 153E-FDCD 1
+STACK 185-F7F 1
+SMALLCONST 153E-FDCD 1
+CODE 4-7 1
+CODE 153E-FDCD 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-F7F 1
+BIGRAM 70-7F 1
+BIGRAM FB-FF 1
+BIGRAM 185-F7F 1
+COMRAM 70-7F 1
+EEDATA F00000-F003FF 1
+MEDIUMCONST 153E-FDCD 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\lab10.X.production.obj
+8 intcode CODE >36:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+8 intcode CODE >73:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+1C text1 CODE >464:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+1C text1 CODE >533:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+24 text1 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+26 text1 CODE >538:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+2E text1 CODE >541:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+34 text1 CODE >542:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+36 text1 CODE >548:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+3A text1 CODE >635:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+3C text1 CODE >638:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+3E text1 CODE >699:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+40 text1 CODE >721:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+42 text1 CODE >723:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+44 text1 CODE >813:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+46 text1 CODE >822:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+48 text1 CODE >635:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+76 text1 CODE >822:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+76 text1 CODE >1251:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+7A text1 CODE >1259:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+92 text1 CODE >1261:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+96 text1 CODE >1262:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+9A text1 CODE >1263:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+A2 text1 CODE >1266:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+A4 text1 CODE >1286:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+BC text1 CODE >1294:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+BE text1 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+CE text1 CODE >1306:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+F0 text1 CODE >1307:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+F2 text1 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+F6 text1 CODE >1309:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+F8 text1 CODE >1316:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+108 text1 CODE >1317:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+12A text1 CODE >1318:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+12C text1 CODE >1316:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+130 text1 CODE >1336:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+132 text1 CODE >1294:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+144 text1 CODE >1438:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+150 text1 CODE >1439:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+158 text1 CODE >1472:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+15C text1 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+15E text1 CODE >1476:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+160 text1 CODE >1489:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+1A2 text1 CODE >1491:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+1A4 text1 CODE >1500:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+1D2 text1 CODE >1506:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+1E8 text1 CODE >1523:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+1EA text1 CODE >1476:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+1FC text1 CODE >1524:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+204 text1 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+210 text1 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+22C text1 CODE >1541:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+22E text0 CODE >37:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+22E text0 CODE >39:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+232 text0 CODE >40:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+236 text0 CODE >41:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+238 text0 CODE >42:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+23C text0 CODE >43:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+240 text0 CODE >44:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+244 text0 CODE >45:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+248 text0 CODE >46:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+24C text0 CODE >47:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+250 text0 CODE >48:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+254 text0 CODE >49:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+258 text0 CODE >50:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+25C text0 CODE >52:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+26E text0 CODE >56:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+276 text0 CODE >58:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+27E text0 CODE >59:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+282 text0 CODE >60:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+294 text0 CODE >62:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+296 text0 CODE >65:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+2A2 text0 CODE >67:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+2BA text0 CODE >69:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+2C0 text0 CODE >65:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+2C4 text0 CODE >73:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+2CA text0 CODE >75:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+2DC text0 CODE >76:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+316 text0 CODE >77:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+338 text0 CODE >78:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+370 text0 CODE >81:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+39A text0 CODE >82:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+3AE text0 CODE >83:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+3D0 text0 CODE >87:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+3D2 text0 CODE >88:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+3D6 text0 CODE >89:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+3DA text0 CODE >90:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+3DE text0 CODE >91:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+3E0 text0 CODE >54:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+3E2 text0 CODE >96:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Lab10_S2_sample.c
+3E6 text7 CODE >475:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+3E6 text7 CODE >478:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+438 text7 CODE >479:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+44C text7 CODE >480:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+462 text7 CODE >481:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+476 text7 CODE >482:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+48C text7 CODE >483:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+48E text7 CODE >484:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+492 text7 CODE >485:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+498 text7 CODE >486:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+4A0 text7 CODE >487:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+4A8 text7 CODE >488:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+4A8 text7 CODE >489:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+4AC text7 CODE >490:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+4B4 text7 CODE >491:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+4BC text7 CODE >492:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+4D2 text7 CODE >493:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+4EA text7 CODE >494:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+502 text7 CODE >495:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+51C text7 CODE >496:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+532 text7 CODE >497:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+54A text7 CODE >498:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+562 text7 CODE >499:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+57E text7 CODE >483:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+592 text7 CODE >501:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+594 text39 CODE >57:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+594 text39 CODE >59:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+596 text39 CODE >60:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+59C text39 CODE >62:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+5B2 text39 CODE >63:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+5B6 text39 CODE >64:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+5BA text39 CODE >67:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+5BC text39 CODE >73:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+5C0 text39 CODE >74:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+5C4 text39 CODE >75:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+5C6 text39 CODE >76:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+5CA text39 CODE >77:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+5CC text39 CODE >78:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+5D0 text39 CODE >79:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+5E0 text39 CODE >80:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+5E4 text39 CODE >81:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+5E8 text39 CODE >82:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+5EA text39 CODE >83:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+5EC text39 CODE >89:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+604 text39 CODE >91:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+608 text39 CODE >92:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+60A text39 CODE >96:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+610 text39 CODE >98:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+612 text39 CODE >99:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+614 text39 CODE >104:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+62C text39 CODE >106:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+630 text39 CODE >107:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+632 text39 CODE >111:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+638 text39 CODE >113:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+63A text39 CODE >114:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+63C text39 CODE >119:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+654 text39 CODE >121:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+658 text39 CODE >122:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+65C text39 CODE >123:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+65E text39 CODE >126:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+664 text39 CODE >128:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+666 text39 CODE >129:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+668 text39 CODE >134:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+680 text39 CODE >136:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+692 text39 CODE >137:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+69E text39 CODE >139:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+6B6 text39 CODE >140:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+6B6 text39 CODE >141:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+6BA text39 CODE >142:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+6C0 text39 CODE >144:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+6C4 text39 CODE >145:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+6C8 text39 CODE >146:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+6CC text39 CODE >147:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+6D4 text39 CODE >148:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+6D6 text39 CODE >149:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+6D8 text39 CODE >152:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+6DA text39 CODE >153:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+6DE text39 CODE >155:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+6E0 text39 CODE >158:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+6E6 text39 CODE >160:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+6E8 text39 CODE >163:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+6EA text39 CODE >67:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+70C text39 CODE >165:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+70E text16 CODE >394:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+710 text16 CODE >397:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+71C text16 CODE >398:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+71E text16 CODE >399:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+72A text16 CODE >400:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+738 text16 CODE >401:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+73C text16 CODE >402:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+748 text16 CODE >404:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+74E text16 CODE >405:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+778 text16 CODE >407:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+7AC text16 CODE >408:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+7B8 text16 CODE >409:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+7BC text16 CODE >410:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+7DA text16 CODE >411:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+800 text16 CODE >412:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+802 text16 CODE >413:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+810 text16 CODE >414:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+82E text16 CODE >415:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+854 text16 CODE >416:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+856 text16 CODE >408:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+85E text16 CODE >402:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+862 text16 CODE >419:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+864 text6 CODE >536:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+864 text6 CODE >539:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+8B6 text6 CODE >540:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+8B8 text6 CODE >541:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+8BC text6 CODE >542:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+8C2 text6 CODE >543:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+8CA text6 CODE >544:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+8D2 text6 CODE >545:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+8D2 text6 CODE >546:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+8D6 text6 CODE >547:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+8DE text6 CODE >548:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+8E6 text6 CODE >550:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+8EA text6 CODE >551:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+90E text6 CODE >552:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+934 text6 CODE >554:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+938 text6 CODE >555:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+95E text6 CODE >556:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+984 text6 CODE >557:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+986 text6 CODE >540:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+99A text6 CODE >559:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+99C text14 CODE >421:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+9A0 text14 CODE >425:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+9A8 text14 CODE >426:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+9BC text14 CODE >427:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+9C8 text14 CODE >428:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+9F4 text14 CODE >429:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+9FA text14 CODE >430:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+A0C text14 CODE >431:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+A1C text14 CODE >432:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+A3E text14 CODE >433:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+A76 text14 CODE >434:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+A86 text14 CODE >435:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+A96 text14 CODE >427:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+AB2 text14 CODE >437:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+AB4 text24 CODE >228:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+AB4 text24 CODE >230:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+ABA text24 CODE >231:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+AC6 text24 CODE >232:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+ACC text24 CODE >233:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+AD8 text24 CODE >234:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+ADE text24 CODE >235:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+AE4 text24 CODE >236:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+AEA text24 CODE >237:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+AF0 text24 CODE >238:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+AF6 text24 CODE >239:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+AFC text24 CODE >240:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B02 text24 CODE >241:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B08 text24 CODE >242:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B0E text24 CODE >243:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B14 text24 CODE >244:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B1A text24 CODE >245:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B20 text24 CODE >246:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B26 text24 CODE >247:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B2C text24 CODE >248:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B32 text24 CODE >249:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B38 text24 CODE >250:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B3E text24 CODE >251:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B44 text24 CODE >252:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B4A text24 CODE >253:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B50 text24 CODE >254:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B56 text24 CODE >255:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B5C text24 CODE >256:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B62 text24 CODE >257:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B68 text24 CODE >258:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B6E text24 CODE >259:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B74 text24 CODE >260:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B7A text24 CODE >261:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B80 text24 CODE >262:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B86 text24 CODE >263:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B8C text24 CODE >264:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B92 text24 CODE >265:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B98 text24 CODE >266:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+B9E text24 CODE >267:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+BA4 text24 CODE >268:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+BAA text24 CODE >269:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+BB0 text24 CODE >270:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+BB6 text24 CODE >271:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+BBC text24 CODE >272:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+BC2 text24 CODE >273:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+BC4 text22 CODE >285:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+BC4 text22 CODE >287:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+BCA text22 CODE >288:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+BE2 text22 CODE >289:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+BFA text22 CODE >290:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+C12 text22 CODE >291:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+C2A text22 CODE >292:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+C30 text22 CODE >293:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+C48 text22 CODE >294:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+C60 text22 CODE >295:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+C78 text22 CODE >296:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+C90 text22 CODE >297:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+C96 text22 CODE >298:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+CA2 text22 CODE >299:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+CA8 text22 CODE >300:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+CB4 text22 CODE >301:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+CB6 text13 CODE >450:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+CB8 text13 CODE >453:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+CC4 text13 CODE >454:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+CC6 text13 CODE >455:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+CF4 text13 CODE >456:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+CFC text13 CODE >457:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+D2A text13 CODE >458:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+D34 text13 CODE >459:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+D52 text13 CODE >460:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+D5A text13 CODE >461:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+D5C text13 CODE >462:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+D5E text13 CODE >464:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+D6C text13 CODE >465:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+D7A text13 CODE >466:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+D80 text13 CODE >467:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+D86 text13 CODE >465:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+D8A text13 CODE >464:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+D8E text13 CODE >470:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+D90 text13 CODE >473:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+D92 text10 CODE >22:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Main_Screen.c
+D92 text10 CODE >24:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Main_Screen.c
+D96 text10 CODE >25:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Main_Screen.c
+D9A text10 CODE >26:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Main_Screen.c
+DA6 text10 CODE >29:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Main_Screen.c
+DAE text10 CODE >31:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Main_Screen.c
+DC2 text10 CODE >32:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Main_Screen.c
+DEE text10 CODE >34:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Main_Screen.c
+DF0 text10 CODE >36:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Main_Screen.c
+DF4 text10 CODE >37:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Main_Screen.c
+DF8 text10 CODE >41:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Main_Screen.c
+DFC text10 CODE >42:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Main_Screen.c
+E00 text10 CODE >44:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Main_Screen.c
+E04 text10 CODE >45:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Main_Screen.c
+E08 text10 CODE >46:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Main_Screen.c
+E0C text10 CODE >47:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Main_Screen.c
+E10 text10 CODE >48:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Main_Screen.c
+E14 text10 CODE >49:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Main_Screen.c
+E44 text10 CODE >50:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Main_Screen.c
+E46 text18 CODE >363:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+E48 text18 CODE >366:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+E54 text18 CODE >367:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+E56 text18 CODE >368:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+E84 text18 CODE >369:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+E8E text18 CODE >370:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+E96 text18 CODE >371:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+EAE text18 CODE >372:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+EB0 text18 CODE >373:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+EB2 text18 CODE >375:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+EB4 text18 CODE >376:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+EBA text18 CODE >377:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+EC2 text18 CODE >375:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+ECA text18 CODE >379:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+ECC text18 CODE >382:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+ECE cinit CODE >2571:C:\Users\julia\AppData\Local\Temp\s8nc.
+ECE cinit CODE >2573:C:\Users\julia\AppData\Local\Temp\s8nc.
+ECE cinit CODE >2576:C:\Users\julia\AppData\Local\Temp\s8nc.
+ECE cinit CODE >2684:C:\Users\julia\AppData\Local\Temp\s8nc.
+ED2 cinit CODE >2685:C:\Users\julia\AppData\Local\Temp\s8nc.
+ED4 cinit CODE >2686:C:\Users\julia\AppData\Local\Temp\s8nc.
+ED4 cinit CODE >2687:C:\Users\julia\AppData\Local\Temp\s8nc.
+ED6 cinit CODE >2688:C:\Users\julia\AppData\Local\Temp\s8nc.
+ED8 cinit CODE >2689:C:\Users\julia\AppData\Local\Temp\s8nc.
+EDA cinit CODE >2692:C:\Users\julia\AppData\Local\Temp\s8nc.
+EDE cinit CODE >2693:C:\Users\julia\AppData\Local\Temp\s8nc.
+EE0 cinit CODE >2694:C:\Users\julia\AppData\Local\Temp\s8nc.
+EE0 cinit CODE >2695:C:\Users\julia\AppData\Local\Temp\s8nc.
+EE2 cinit CODE >2696:C:\Users\julia\AppData\Local\Temp\s8nc.
+EE4 cinit CODE >2697:C:\Users\julia\AppData\Local\Temp\s8nc.
+EE6 cinit CODE >2702:C:\Users\julia\AppData\Local\Temp\s8nc.
+EE8 cinit CODE >2703:C:\Users\julia\AppData\Local\Temp\s8nc.
+EEA cinit CODE >2704:C:\Users\julia\AppData\Local\Temp\s8nc.
+EEC cinit CODE >2705:C:\Users\julia\AppData\Local\Temp\s8nc.
+EEE cinit CODE >2706:C:\Users\julia\AppData\Local\Temp\s8nc.
+EF0 cinit CODE >2707:C:\Users\julia\AppData\Local\Temp\s8nc.
+EF2 cinit CODE >2708:C:\Users\julia\AppData\Local\Temp\s8nc.
+EF6 cinit CODE >2709:C:\Users\julia\AppData\Local\Temp\s8nc.
+EFA cinit CODE >2710:C:\Users\julia\AppData\Local\Temp\s8nc.
+EFA cinit CODE >2711:C:\Users\julia\AppData\Local\Temp\s8nc.
+EFC cinit CODE >2712:C:\Users\julia\AppData\Local\Temp\s8nc.
+F00 cinit CODE >2713:C:\Users\julia\AppData\Local\Temp\s8nc.
+F02 cinit CODE >2714:C:\Users\julia\AppData\Local\Temp\s8nc.
+F04 cinit CODE >2715:C:\Users\julia\AppData\Local\Temp\s8nc.
+F06 cinit CODE >2719:C:\Users\julia\AppData\Local\Temp\s8nc.
+F08 cinit CODE >2720:C:\Users\julia\AppData\Local\Temp\s8nc.
+F0A cinit CODE >2721:C:\Users\julia\AppData\Local\Temp\s8nc.
+F0C cinit CODE >2722:C:\Users\julia\AppData\Local\Temp\s8nc.
+F0E cinit CODE >2723:C:\Users\julia\AppData\Local\Temp\s8nc.
+F10 cinit CODE >2724:C:\Users\julia\AppData\Local\Temp\s8nc.
+F12 cinit CODE >2725:C:\Users\julia\AppData\Local\Temp\s8nc.
+F16 cinit CODE >2726:C:\Users\julia\AppData\Local\Temp\s8nc.
+F1A cinit CODE >2727:C:\Users\julia\AppData\Local\Temp\s8nc.
+F1A cinit CODE >2728:C:\Users\julia\AppData\Local\Temp\s8nc.
+F1C cinit CODE >2729:C:\Users\julia\AppData\Local\Temp\s8nc.
+F20 cinit CODE >2730:C:\Users\julia\AppData\Local\Temp\s8nc.
+F22 cinit CODE >2731:C:\Users\julia\AppData\Local\Temp\s8nc.
+F24 cinit CODE >2732:C:\Users\julia\AppData\Local\Temp\s8nc.
+F26 cinit CODE >2736:C:\Users\julia\AppData\Local\Temp\s8nc.
+F28 cinit CODE >2737:C:\Users\julia\AppData\Local\Temp\s8nc.
+F2A cinit CODE >2738:C:\Users\julia\AppData\Local\Temp\s8nc.
+F2C cinit CODE >2739:C:\Users\julia\AppData\Local\Temp\s8nc.
+F2E cinit CODE >2740:C:\Users\julia\AppData\Local\Temp\s8nc.
+F30 cinit CODE >2741:C:\Users\julia\AppData\Local\Temp\s8nc.
+F32 cinit CODE >2742:C:\Users\julia\AppData\Local\Temp\s8nc.
+F36 cinit CODE >2743:C:\Users\julia\AppData\Local\Temp\s8nc.
+F3A cinit CODE >2744:C:\Users\julia\AppData\Local\Temp\s8nc.
+F3A cinit CODE >2745:C:\Users\julia\AppData\Local\Temp\s8nc.
+F3C cinit CODE >2746:C:\Users\julia\AppData\Local\Temp\s8nc.
+F40 cinit CODE >2747:C:\Users\julia\AppData\Local\Temp\s8nc.
+F42 cinit CODE >2748:C:\Users\julia\AppData\Local\Temp\s8nc.
+F44 cinit CODE >2749:C:\Users\julia\AppData\Local\Temp\s8nc.
+F46 cinit CODE >2755:C:\Users\julia\AppData\Local\Temp\s8nc.
+F46 cinit CODE >2757:C:\Users\julia\AppData\Local\Temp\s8nc.
+F48 cinit CODE >2758:C:\Users\julia\AppData\Local\Temp\s8nc.
+F4A cinit CODE >2759:C:\Users\julia\AppData\Local\Temp\s8nc.
+F4C cinit CODE >2760:C:\Users\julia\AppData\Local\Temp\s8nc.
+FCE intcode_body CODE >36:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+FFC intcode_body CODE >38:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+1006 intcode_body CODE >39:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+1010 intcode_body CODE >40:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+104A text32 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+104C text32 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+1050 text32 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+1054 text32 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+1058 text32 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+105C text32 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+1060 text32 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+1062 text32 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+1066 text32 CODE >87:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+106A text32 CODE >88:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+106E text32 CODE >90:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+1072 text32 CODE >91:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+1076 text32 CODE >92:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+1076 text32 CODE >93:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+107A text32 CODE >95:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+107C text32 CODE >96:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+107E text32 CODE >98:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+1080 text32 CODE >100:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+1084 text32 CODE >101:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+1088 text32 CODE >103:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+108C text32 CODE >104:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+1090 text32 CODE >105:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+1090 text32 CODE >106:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+1092 text32 CODE >108:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+1094 text32 CODE >110:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+1098 text32 CODE >111:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+109C text32 CODE >112:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+109C text32 CODE >113:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+109E text32 CODE >115:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+10A2 text32 CODE >116:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+10A6 text32 CODE >118:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+10A8 text32 CODE >119:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+10AA text32 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+10AE text32 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+10B4 text32 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+10B8 text32 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+10BA text4 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+10BA text4 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+10C2 text4 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+10CA text4 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+10CE text4 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+10D0 text4 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+10D6 text4 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+10DA text4 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+10E2 text4 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+10E8 text4 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+10F4 text4 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+10FC text4 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+1100 text4 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+1106 text4 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+110C text4 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+110C text4 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+1114 text4 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+1116 text5 CODE >561:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1116 text5 CODE >563:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+113A text5 CODE >564:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+116E text5 CODE >565:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+11C4 text29 CODE >11:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+11C4 text29 CODE >18:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+11E0 text29 CODE >19:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+11FC text29 CODE >21:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1200 text29 CODE >23:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1204 text29 CODE >24:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1208 text29 CODE >26:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+120A text29 CODE >27:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+120C text29 CODE >29:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1212 text29 CODE >30:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1214 text29 CODE >31:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1216 text20 CODE >339:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1218 text20 CODE >341:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+121E text20 CODE >342:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1224 text20 CODE >343:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+122C text20 CODE >344:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1232 text20 CODE >345:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+123A text20 CODE >346:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1240 text20 CODE >347:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1246 text20 CODE >348:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+124E text20 CODE >349:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1254 text20 CODE >350:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+125C text20 CODE >351:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1262 text20 CODE >352:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1264 text3 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+1264 text3 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+126C text3 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+1270 text3 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+1272 text3 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+1278 text3 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+127C text3 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+1284 text3 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+1290 text3 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+129A text3 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+12A0 text3 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+12A6 text3 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+12A6 text3 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+12AE text3 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+12B0 text17 CODE >384:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+12B2 text17 CODE >388:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+12BA text17 CODE >390:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+12D0 text17 CODE >388:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+12F8 text17 CODE >392:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+12FA text15 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strlen.c
+12FA text15 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strlen.c
+1302 text15 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strlen.c
+1304 text15 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strlen.c
+130A text15 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strlen.c
+1318 text15 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strlen.c
+1336 text15 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strlen.c
+1338 text23 CODE >275:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1338 text23 CODE >277:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+133E text23 CODE >278:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+134A text23 CODE >279:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1356 text23 CODE >280:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+135C text23 CODE >281:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1368 text23 CODE >282:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1374 text23 CODE >283:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1376 text11 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c
+1376 text11 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c
+137E text11 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c
+1380 text11 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c
+1384 text11 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c
+138A text11 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c
+13A6 text11 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c
+13A8 text19 CODE >354:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+13AA text19 CODE >356:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+13B6 text19 CODE >357:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+13B8 text19 CODE >358:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+13CA text19 CODE >359:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+13D0 text19 CODE >360:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+13D6 text19 CODE >361:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+13D8 text21 CODE >591:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+13D8 text21 CODE >593:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+13DA text21 CODE >594:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+13DC text21 CODE >596:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+13E0 text21 CODE >597:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+13E4 text21 CODE >600:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+13E8 text21 CODE >601:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+13EC text21 CODE >602:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+13F0 text21 CODE >603:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+13F6 text21 CODE >604:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+13FC text21 CODE >605:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1400 text21 CODE >606:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1402 text30 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
+1402 text30 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
+140E text30 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
+1416 text30 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
+141E text30 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
+1428 text30 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
+144A text12 CODE >566:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+144A text12 CODE >568:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1464 text12 CODE >569:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1466 text9 CODE >97:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+1466 text9 CODE >99:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+146A text9 CODE >100:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+146E text9 CODE >101:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+1472 text9 CODE >102:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+1474 text9 CODE >103:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+1476 text9 CODE >104:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+147C text9 CODE >105:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+147E text9 CODE >106:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+1480 text33 CODE >16:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+1480 text33 CODE >18:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+1482 text33 CODE >19:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+1484 text33 CODE >20:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+1486 text33 CODE >22:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+148A text33 CODE >23:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+148E text33 CODE >24:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+1490 text33 CODE >25:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+1492 text33 CODE >26:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+1494 text33 CODE >27:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+1496 text33 CODE >28:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+1498 text27 CODE >136:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+149A text27 CODE >139:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+149C text27 CODE >140:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+14A0 text27 CODE >141:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+14A4 text27 CODE >142:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+14AA text27 CODE >143:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+14AC text31 CODE >25:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+14AC text31 CODE >29:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+14BA text31 CODE >30:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+14BE text31 CODE >31:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+14C0 text28 CODE >164:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+14C0 text28 CODE >166:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+14C2 text28 CODE >167:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+14CE text28 CODE >168:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+14D0 text28 CODE >169:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+14D2 text36 CODE >67:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+14D2 text36 CODE >69:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+14D6 text36 CODE >70:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+14DA text36 CODE >71:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+14DE text36 CODE >72:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+14E2 text36 CODE >73:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+14E4 text25 CODE >156:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+14E6 text25 CODE >158:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+14E8 text25 CODE >159:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+14EA text25 CODE >160:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+14F0 text25 CODE >161:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+14F2 text25 CODE >162:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+14F4 text26 CODE >145:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+14F6 text26 CODE >147:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+14F8 text26 CODE >149:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+14FA text26 CODE >150:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1500 text26 CODE >152:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1502 text26 CODE >154:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/ST7735_TFT.c
+1504 text2 CODE >33:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+1506 text2 CODE >35:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+150C text2 CODE >36:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+1510 text2 CODE >37:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+1512 text38 CODE >42:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+1512 text38 CODE >44:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+1516 text38 CODE >46:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+1518 text38 CODE >47:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+151A text38 CODE >48:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+151C text38 CODE >49:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+151E text8 CODE >39:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+151E text8 CODE >41:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+1522 text8 CODE >42:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+1526 text8 CODE >44:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+1528 text35 CODE >90:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+1528 text35 CODE >92:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+152C text35 CODE >93:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+152E text35 CODE >94:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/utils.c
+1530 text40 CODE >51:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+1530 text40 CODE >53:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+1534 text40 CODE >54:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+1536 text40 CODE >55:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+1538 text34 CODE >30:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+1538 text34 CODE >32:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+153A text34 CODE >33:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+153C text34 CODE >34:C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB10/Interrupt.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__end_of_spiwrite 14AC 0 CODE 0 text27 dist/default/production\lab10.X.production.obj
+___lwmod@counter 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__LdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\lab10.X.production.obj
+__LdataBANK1 0 0 ABS 0 dataBANK1 dist/default/production\lab10.X.production.obj
+drawCircle@f 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+drawCircle@r 20 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+drawCircle@x 2C 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+drawCircle@y 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__Lmediumconst FDCE 0 MEDIUMCONST 0 mediumconst dist/default/production\lab10.X.production.obj
+__Hspace_0 30000E 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__Hspace_1 185 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__Hspace_2 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__HidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\lab10.X.production.obj
+__HidataBANK1 0 0 ABS 0 idataBANK1 dist/default/production\lab10.X.production.obj
+__end_of_write_data 14F4 0 CODE 0 text25 dist/default/production\lab10.X.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\lab10.X.production.obj
+__size_of_fillCircle 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__mediumconst FDCE 0 MEDIUMCONST 0 mediumconst C:\Users\julia\AppData\Local\Temp\s8nc.obj
+fillCircleHelper@cornername 29 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\lab10.X.production.obj
+drawtext@cursor_x 184 0 BANK1 1 cstackBANK1 dist/default/production\lab10.X.production.obj
+drawtext@cursor_y 183 0 BANK1 1 cstackBANK1 dist/default/production\lab10.X.production.obj
+_T1CONbits FCD 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__end_of_Init_UART 14C0 0 CODE 0 text31 dist/default/production\lab10.X.production.obj
+__size_of_Wait_One_Sec 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+drawtext@i 181 0 BANK1 1 cstackBANK1 dist/default/production\lab10.X.production.obj
+drawtext@x 17E 0 BANK1 1 cstackBANK1 dist/default/production\lab10.X.production.obj
+drawtext@y F3 0 BANK0 1 cstackBANK0 dist/default/production\lab10.X.production.obj
+main@i 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__size_of_Init_UART 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\lab10.X.production.obj
+_LED1 80 0 BANK0 1 dataBANK0 dist/default/production\lab10.X.production.obj
+_LED2 95 0 BANK0 1 dataBANK0 dist/default/production\lab10.X.production.obj
+_LED3 AA 0 BANK0 1 dataBANK0 dist/default/production\lab10.X.production.obj
+_LED4 BF 0 BANK0 1 dataBANK0 dist/default/production\lab10.X.production.obj
+_TRMT 7D61 0 ABS 0 - dist/default/production\lab10.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\julia\AppData\Local\Temp\s8nc.obj
+_font FDCF 0 MEDIUMCONST 0 mediumconst dist/default/production\lab10.X.production.obj
+_main 22E 0 CODE 0 text0 dist/default/production\lab10.X.production.obj
+_txt1 12A 0 BANK1 1 dataBANK1 dist/default/production\lab10.X.production.obj
+_wrap 53 0 COMRAM 1 dataCOMRAM dist/default/production\lab10.X.production.obj
+start 18 0 CODE 0 init C:\Users\julia\AppData\Local\Temp\s8nc.obj
+fillCircle@color F9 0 BANK0 1 cstackBANK0 dist/default/production\lab10.X.production.obj
+__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__size_of_Activate_Buzzer 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_Nec_State 6B 0 COMRAM 1 bssCOMRAM dist/default/production\lab10.X.production.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\lab10.X.production.obj
+_Wait_Half_Second 1466 0 CODE 0 text9 dist/default/production\lab10.X.production.obj
+_fillRectangle CB6 0 CODE 0 text13 dist/default/production\lab10.X.production.obj
+?___wmul 11 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+fillCircleHelper@x0 23 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+fillCircleHelper@y0 25 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__end_of_Reset_Nec_State 1538 0 CODE 0 text40 dist/default/production\lab10.X.production.obj
+__LidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\lab10.X.production.obj
+__LidataBANK1 0 0 ABS 0 idataBANK1 dist/default/production\lab10.X.production.obj
+_Init_UART 14AC 0 CODE 0 text31 dist/default/production\lab10.X.production.obj
+drawtext@_text F4 0 BANK0 1 cstackBANK0 dist/default/production\lab10.X.production.obj
+drawtext@color F6 0 BANK0 1 cstackBANK0 dist/default/production\lab10.X.production.obj
+__end_of_Wait_One_Sec 1528 0 CODE 0 text8 dist/default/production\lab10.X.production.obj
+__Hpowerup 18 0 CODE 0 powerup dist/default/production\lab10.X.production.obj
+printf@c 29 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+printf@f 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+_T0CONbits FD5 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\lab10.X.production.obj
+__accesstop 80 0 ABS 0 - C:\Users\julia\AppData\Local\Temp\s8nc.obj
+intlevel0 0 0 CODE 0 text C:\Users\julia\AppData\Local\Temp\s8nc.obj
+intlevel1 0 0 CODE 0 text C:\Users\julia\AppData\Local\Temp\s8nc.obj
+intlevel2 0 0 CODE 0 text C:\Users\julia\AppData\Local\Temp\s8nc.obj
+intlevel3 0 0 CODE 0 text C:\Users\julia\AppData\Local\Temp\s8nc.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\lab10.X.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\lab10.X.production.obj
+__size_of_Deactivate_Buzzer 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+fillScreen@color 24 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\lab10.X.production.obj
+_Nec_Button 6A 0 COMRAM 1 bssCOMRAM dist/default/production\lab10.X.production.obj
+setAddrWindow@x0 17 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+setAddrWindow@x1 15 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+setAddrWindow@y0 14 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+setAddrWindow@y1 16 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\lab10.X.production.obj
+__size_of_fillScreen 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__pidataCOMRAM 142A 0 CODE 0 idataCOMRAM dist/default/production\lab10.X.production.obj
+___wmul@multiplicand 13 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+printf@flag 26 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+printf@prec 25 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+_ADCON0 FC2 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_ADCON1 FC1 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_ADCON2 FC0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_ADRESH FC4 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_ADRESL FC3 0 ABS 0 - dist/default/production\lab10.X.production.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\julia\AppData\Local\Temp\s8nc.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\julia\AppData\Local\Temp\s8nc.obj
+_Reset_Nec_State 1530 0 CODE 0 text40 dist/default/production\lab10.X.production.obj
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\lab10.X.production.obj
+_CCPR2L FBB 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\lab10.X.production.obj
+__end_of___wmul 142A 0 CODE 0 text30 dist/default/production\lab10.X.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\lab10.X.production.obj
+fillRect@color 26 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+drawCircle@x0 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+drawCircle@y0 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__Hmediumconst 10000 0 MEDIUMCONST 0 mediumconst dist/default/production\lab10.X.production.obj
+?_printf 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+_TFT_GreenTab_Initialize 13D8 0 CODE 0 text21 dist/default/production\lab10.X.production.obj
+__Hintcodelo 18 0 CODE 0 intcodelo dist/default/production\lab10.X.production.obj
+__size_of_drawCircle 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+___lwmod@divisor 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__end_of_Wait_Half_Second 1480 0 CODE 0 text9 dist/default/production\lab10.X.production.obj
+__end_of___lwdiv 1116 0 CODE 0 text4 dist/default/production\lab10.X.production.obj
+__end_of___lwmod 12B0 0 CODE 0 text3 dist/default/production\lab10.X.production.obj
+__end_of_TFT_GreenTab_Initialize 1402 0 CODE 0 text21 dist/default/production\lab10.X.production.obj
+__end_of_chkisr 104A 0 CODE 0 intcode_body dist/default/production\lab10.X.production.obj
+fillRectangle@hi 21 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+fillRectangle@lo 22 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+?_strlen 11 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__size_of_Wait_Half_Second 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_dpowers FFAA 0 MEDIUMCONST 0 mediumconst dist/default/production\lab10.X.production.obj
+__size_of_fillRectangle 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_drawFastVLine E46 0 CODE 0 text18 dist/default/production\lab10.X.production.obj
+__size_of_Rcmd1 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__size_of_Rcmd3 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+drawFastVLine@hi 20 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+drawFastVLine@lo 21 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+___lwdiv@quotient 15 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\lab10.X.production.obj
+__size_of_putch 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_INTCON2bits FF1 0 ABS 0 - dist/default/production\lab10.X.production.obj
+___lwmod@dividend 18 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__Lintcodelo 18 0 CODE 0 intcodelo dist/default/production\lab10.X.production.obj
+__size_of_Init_Interrupt 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+start_initialization ECE 0 CODE 0 cinit dist/default/production\lab10.X.production.obj
+_Nec_OK 62 0 COMRAM 1 bssCOMRAM dist/default/production\lab10.X.production.obj
+__end_of_hexpowers FFBC 0 MEDIUMCONST 0 mediumconst dist/default/production\lab10.X.production.obj
+_OSCCON FD3 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\lab10.X.production.obj
+drawChar@line 35 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+drawChar@size 34 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+_TRISCbits F94 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__size_of_write_data 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+___rparam_used 1 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_setAddrWindow 1216 0 CODE 0 text20 dist/default/production\lab10.X.production.obj
+__size_of_Enable_INT_Interrupt 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__end_of_fillRectangle D92 0 CODE 0 text13 dist/default/production\lab10.X.production.obj
+__end_of_OpenUSART 10BA 0 CODE 0 text32 dist/default/production\lab10.X.production.obj
+_SPBRGH FB0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__pcstackBANK0 F3 0 BANK0 1 cstackBANK0 dist/default/production\lab10.X.production.obj
+__pcstackBANK1 17E 0 BANK1 1 cstackBANK1 dist/default/production\lab10.X.production.obj
+_fillCircleHelper 864 0 CODE 0 text6 dist/default/production\lab10.X.production.obj
+_SSPBUF FC9 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__size_of_OpenUSART 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_hexpowers FFB4 0 MEDIUMCONST 0 mediumconst dist/default/production\lab10.X.production.obj
+__end_of_printf 22E 0 CODE 0 text1 dist/default/production\lab10.X.production.obj
+__end_of_Deactivate_Buzzer 1530 0 CODE 0 text35 dist/default/production\lab10.X.production.obj
+__size_of_Reset_Nec_State 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__end_of_Enable_INT_Interrupt 153E 0 CODE 0 text34 dist/default/production\lab10.X.production.obj
+__end_of_LCD_Reset 14D2 0 CODE 0 text28 dist/default/production\lab10.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\lab10.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\lab10.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\lab10.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\lab10.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\lab10.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\lab10.X.production.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\lab10.X.production.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\lab10.X.production.obj
+__Hbank8 0 0 ABS 0 bank8 dist/default/production\lab10.X.production.obj
+__Hbank9 0 0 ABS 0 bank9 dist/default/production\lab10.X.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production\lab10.X.production.obj
+__Hconst 0 0 CODE 0 const dist/default/production\lab10.X.production.obj
+__end_of_strcpy 13A8 0 CODE 0 text11 dist/default/production\lab10.X.production.obj
+__end_of_strlen 1338 0 CODE 0 text15 dist/default/production\lab10.X.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production\lab10.X.production.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production\lab10.X.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\lab10.X.production.obj
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\lab10.X.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\lab10.X.production.obj
+__Hstack 0 0 STACK 2 stack dist/default/production\lab10.X.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production\lab10.X.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production\lab10.X.production.obj
+__Htext2 0 0 ABS 0 text2 dist/default/production\lab10.X.production.obj
+__Htext3 0 0 ABS 0 text3 dist/default/production\lab10.X.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production\lab10.X.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production\lab10.X.production.obj
+__Htext6 0 0 ABS 0 text6 dist/default/production\lab10.X.production.obj
+__Htext7 0 0 ABS 0 text7 dist/default/production\lab10.X.production.obj
+__Htext8 0 0 ABS 0 text8 dist/default/production\lab10.X.production.obj
+__Htext9 0 0 ABS 0 text9 dist/default/production\lab10.X.production.obj
+___lwdiv@counter 17 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__size_of_LCD_Reset 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_OpenUSART 104A 0 CODE 0 text32 dist/default/production\lab10.X.production.obj
+__Hbank10 0 0 ABS 0 bank10 dist/default/production\lab10.X.production.obj
+__Hbank11 0 0 ABS 0 bank11 dist/default/production\lab10.X.production.obj
+__Hbank12 0 0 ABS 0 bank12 dist/default/production\lab10.X.production.obj
+__Hbank13 0 0 ABS 0 bank13 dist/default/production\lab10.X.production.obj
+__Hbank14 0 0 ABS 0 bank14 dist/default/production\lab10.X.production.obj
+__Hbank15 0 0 ABS 0 bank15 dist/default/production\lab10.X.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\lab10.X.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production\lab10.X.production.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\julia\AppData\Local\Temp\s8nc.obj
+fillCircleHelper@f 35 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+fillCircleHelper@r 27 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+fillCircleHelper@x 37 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+fillCircleHelper@y 39 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production\lab10.X.production.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production\lab10.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\lab10.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\lab10.X.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\lab10.X.production.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\lab10.X.production.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\lab10.X.production.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\lab10.X.production.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\lab10.X.production.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\lab10.X.production.obj
+__Lbank8 0 0 ABS 0 bank8 dist/default/production\lab10.X.production.obj
+__Lbank9 0 0 ABS 0 bank9 dist/default/production\lab10.X.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production\lab10.X.production.obj
+__Lconst 0 0 CODE 0 const dist/default/production\lab10.X.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production\lab10.X.production.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production\lab10.X.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\lab10.X.production.obj
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\lab10.X.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\lab10.X.production.obj
+__Lstack 0 0 STACK 2 stack dist/default/production\lab10.X.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production\lab10.X.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production\lab10.X.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/production\lab10.X.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/production\lab10.X.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production\lab10.X.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production\lab10.X.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/production\lab10.X.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/production\lab10.X.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/production\lab10.X.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/production\lab10.X.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\lab10.X.production.obj
+_Nec_code 5E 0 COMRAM 1 bssCOMRAM dist/default/production\lab10.X.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\lab10.X.production.obj
+_PORTCbits F82 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_LCD_Reset 14C0 0 CODE 0 text28 dist/default/production\lab10.X.production.obj
+_PORTDbits F83 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_INTCONbits FF2 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__CFG_OSC$INTIO67 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production\lab10.X.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production\lab10.X.production.obj
+__Hinit 18 0 CODE 0 init dist/default/production\lab10.X.production.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\lab10.X.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\lab10.X.production.obj
+__Htemp 0 0 COMRAM 1 temp dist/default/production\lab10.X.production.obj
+__Htext 0 0 ABS 0 text dist/default/production\lab10.X.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production\lab10.X.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production\lab10.X.production.obj
+__Linit 18 0 CODE 0 init dist/default/production\lab10.X.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\lab10.X.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\lab10.X.production.obj
+__Ltemp 0 0 COMRAM 1 temp dist/default/production\lab10.X.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production\lab10.X.production.obj
+___wmul 1402 0 CODE 0 text30 dist/default/production\lab10.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\lab10.X.production.obj
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production\lab10.X.production.obj
+__size_of_drawFastVLine 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production\lab10.X.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production\lab10.X.production.obj
+_PR2 FCB 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__S0 30000E 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__S1 185 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__S2 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_nbr 66 0 COMRAM 1 bssCOMRAM dist/default/production\lab10.X.production.obj
+_txt 68 0 COMRAM 1 bssCOMRAM dist/default/production\lab10.X.production.obj
+_array1 3E 0 COMRAM 1 dataCOMRAM dist/default/production\lab10.X.production.obj
+_buffer D4 0 BANK0 1 bssBANK0 dist/default/production\lab10.X.production.obj
+_chkisr 8 0 CODE 0 intcode dist/default/production\lab10.X.production.obj
+__size_of_Rcmd2red 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+fillRect@h 25 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+fillRect@i 2C 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+fillRect@w 24 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+fillRect@x 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+fillRect@y 23 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+_TIMER1_isr 1512 0 CODE 0 text38 dist/default/production\lab10.X.production.obj
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\lab10.X.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\lab10.X.production.obj
+__end_of_Initialize_LCD_Screen E46 0 CODE 0 text10 dist/default/production\lab10.X.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\lab10.X.production.obj
+__size_of_drawChar 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__size_of_drawtext 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__end_of_fillCircleHelper 99C 0 CODE 0 text6 dist/default/production\lab10.X.production.obj
+strcpy@cp 15 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+strcpy@to 11 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+int_func FCE 0 CODE 0 intcode_body dist/default/production\lab10.X.production.obj
+__CFG_CCP2MX$PORTC 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__size_of_setAddrWindow 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+delay_ms@ms 17 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+drawFastVLine@h 19 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+drawFastVLine@x 22 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+drawFastVLine@y 18 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production\lab10.X.production.obj
+__end_of_drawFastVLine ECE 0 CODE 0 text18 dist/default/production\lab10.X.production.obj
+__size_of_fillCircleHelper 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__Hramtop 1000 0 RAM 0 ramtop dist/default/production\lab10.X.production.obj
+strlen@s 11 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+fillCircleHelper@color 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+fillCircleHelper@ddF_x 31 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+fillCircleHelper@ddF_y 33 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+fillCircleHelper@delta 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+_Deactivate_Buzzer 1528 0 CODE 0 text35 dist/default/production\lab10.X.production.obj
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\lab10.X.production.obj
+__pdataBANK0 80 0 BANK0 1 dataBANK0 dist/default/production\lab10.X.production.obj
+__pdataBANK1 100 0 BANK1 1 dataBANK1 dist/default/production\lab10.X.production.obj
+__activetblptr 2 0 ABS 0 - dist/default/production\lab10.X.production.obj
+drawCircle@color 22 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+drawCircle@ddF_x 26 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+drawCircle@ddF_y 28 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\lab10.X.production.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\lab10.X.production.obj
+_Initialize_LCD_Screen D92 0 CODE 0 text10 dist/default/production\lab10.X.production.obj
+__Htext10 0 0 ABS 0 text10 dist/default/production\lab10.X.production.obj
+__Htext11 0 0 ABS 0 text11 dist/default/production\lab10.X.production.obj
+__Htext12 0 0 ABS 0 text12 dist/default/production\lab10.X.production.obj
+__Htext13 0 0 ABS 0 text13 dist/default/production\lab10.X.production.obj
+__Htext14 0 0 ABS 0 text14 dist/default/production\lab10.X.production.obj
+__Htext15 0 0 ABS 0 text15 dist/default/production\lab10.X.production.obj
+__Htext16 0 0 ABS 0 text16 dist/default/production\lab10.X.production.obj
+__Htext17 0 0 ABS 0 text17 dist/default/production\lab10.X.production.obj
+__Htext18 0 0 ABS 0 text18 dist/default/production\lab10.X.production.obj
+__Htext19 0 0 ABS 0 text19 dist/default/production\lab10.X.production.obj
+__Htext20 0 0 ABS 0 text20 dist/default/production\lab10.X.production.obj
+__Htext21 0 0 ABS 0 text21 dist/default/production\lab10.X.production.obj
+__Htext22 0 0 ABS 0 text22 dist/default/production\lab10.X.production.obj
+__Htext23 0 0 ABS 0 text23 dist/default/production\lab10.X.production.obj
+__Htext24 0 0 ABS 0 text24 dist/default/production\lab10.X.production.obj
+__Htext25 0 0 ABS 0 text25 dist/default/production\lab10.X.production.obj
+__Htext26 0 0 ABS 0 text26 dist/default/production\lab10.X.production.obj
+__Htext27 0 0 ABS 0 text27 dist/default/production\lab10.X.production.obj
+__Htext28 0 0 ABS 0 text28 dist/default/production\lab10.X.production.obj
+__Htext29 0 0 ABS 0 text29 dist/default/production\lab10.X.production.obj
+__Htext30 0 0 ABS 0 text30 dist/default/production\lab10.X.production.obj
+__Htext31 0 0 ABS 0 text31 dist/default/production\lab10.X.production.obj
+__Htext32 0 0 ABS 0 text32 dist/default/production\lab10.X.production.obj
+__Htext33 0 0 ABS 0 text33 dist/default/production\lab10.X.production.obj
+__Htext34 0 0 ABS 0 text34 dist/default/production\lab10.X.production.obj
+__Htext35 0 0 ABS 0 text35 dist/default/production\lab10.X.production.obj
+__Htext36 0 0 ABS 0 text36 dist/default/production\lab10.X.production.obj
+__Htext38 0 0 ABS 0 text38 dist/default/production\lab10.X.production.obj
+__Htext39 0 0 ABS 0 text39 dist/default/production\lab10.X.production.obj
+__Htext40 0 0 ABS 0 text40 dist/default/production\lab10.X.production.obj
+_fillCircle 1116 0 CODE 0 text5 dist/default/production\lab10.X.production.obj
+_RCSTAbits FAB 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_PIE1bits F9D 0 ABS 0 - dist/default/production\lab10.X.production.obj
+drawChar@c 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+drawChar@i 38 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+drawChar@j 37 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+drawChar@x 36 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+drawChar@y 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+drawtext@bg F8 0 BANK0 1 cstackBANK0 dist/default/production\lab10.X.production.obj
+__ptext10 D92 0 CODE 0 text10 dist/default/production\lab10.X.production.obj
+__ptext11 1376 0 CODE 0 text11 dist/default/production\lab10.X.production.obj
+__ptext12 144A 0 CODE 0 text12 dist/default/production\lab10.X.production.obj
+__ptext13 CB6 0 CODE 0 text13 dist/default/production\lab10.X.production.obj
+__ptext14 99C 0 CODE 0 text14 dist/default/production\lab10.X.production.obj
+__ptext15 12FA 0 CODE 0 text15 dist/default/production\lab10.X.production.obj
+__ptext16 70E 0 CODE 0 text16 dist/default/production\lab10.X.production.obj
+__ptext17 12B0 0 CODE 0 text17 dist/default/production\lab10.X.production.obj
+__ptext18 E46 0 CODE 0 text18 dist/default/production\lab10.X.production.obj
+__ptext19 13A8 0 CODE 0 text19 dist/default/production\lab10.X.production.obj
+__ptext20 1216 0 CODE 0 text20 dist/default/production\lab10.X.production.obj
+__ptext21 13D8 0 CODE 0 text21 dist/default/production\lab10.X.production.obj
+__ptext22 BC4 0 CODE 0 text22 dist/default/production\lab10.X.production.obj
+__ptext23 1338 0 CODE 0 text23 dist/default/production\lab10.X.production.obj
+__ptext24 AB4 0 CODE 0 text24 dist/default/production\lab10.X.production.obj
+__ptext25 14E4 0 CODE 0 text25 dist/default/production\lab10.X.production.obj
+__ptext26 14F4 0 CODE 0 text26 dist/default/production\lab10.X.production.obj
+__ptext27 1498 0 CODE 0 text27 dist/default/production\lab10.X.production.obj
+__ptext28 14C0 0 CODE 0 text28 dist/default/production\lab10.X.production.obj
+__ptext29 11C4 0 CODE 0 text29 dist/default/production\lab10.X.production.obj
+__ptext30 1402 0 CODE 0 text30 dist/default/production\lab10.X.production.obj
+__ptext31 14AC 0 CODE 0 text31 dist/default/production\lab10.X.production.obj
+__ptext32 104A 0 CODE 0 text32 dist/default/production\lab10.X.production.obj
+__ptext33 1480 0 CODE 0 text33 dist/default/production\lab10.X.production.obj
+__ptext34 1538 0 CODE 0 text34 dist/default/production\lab10.X.production.obj
+__ptext35 1528 0 CODE 0 text35 dist/default/production\lab10.X.production.obj
+__ptext36 14D2 0 CODE 0 text36 dist/default/production\lab10.X.production.obj
+__ptext38 1512 0 CODE 0 text38 dist/default/production\lab10.X.production.obj
+__ptext39 594 0 CODE 0 text39 dist/default/production\lab10.X.production.obj
+__ptext40 1530 0 CODE 0 text40 dist/default/production\lab10.X.production.obj
+delay_ms@count 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__size_of_chkisr 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__pintcode_body FCE 0 CODE 0 intcode_body dist/default/production\lab10.X.production.obj
+___lwdiv 10BA 0 CODE 0 text4 dist/default/production\lab10.X.production.obj
+___lwmod 1264 0 CODE 0 text3 dist/default/production\lab10.X.production.obj
+strlen@cp 15 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__Lbank10 0 0 ABS 0 bank10 dist/default/production\lab10.X.production.obj
+__Lbank11 0 0 ABS 0 bank11 dist/default/production\lab10.X.production.obj
+__Lbank12 0 0 ABS 0 bank12 dist/default/production\lab10.X.production.obj
+__Lbank13 0 0 ABS 0 bank13 dist/default/production\lab10.X.production.obj
+__Lbank14 0 0 ABS 0 bank14 dist/default/production\lab10.X.production.obj
+__Lbank15 0 0 ABS 0 bank15 dist/default/production\lab10.X.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\lab10.X.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production\lab10.X.production.obj
+__end_of_setAddrWindow 1264 0 CODE 0 text20 dist/default/production\lab10.X.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production\lab10.X.production.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/production\lab10.X.production.obj
+_printf 1C 0 CODE 0 text1 dist/default/production\lab10.X.production.obj
+__end_of_drawPixel 13D8 0 CODE 0 text19 dist/default/production\lab10.X.production.obj
+_Rcmd2red 1338 0 CODE 0 text23 dist/default/production\lab10.X.production.obj
+___wmul@multiplier 11 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__size_of_drawPixel 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\lab10.X.production.obj
+__end_of_TIMER1_isr 151E 0 CODE 0 text38 dist/default/production\lab10.X.production.obj
+_drawChar 70E 0 CODE 0 text16 dist/default/production\lab10.X.production.obj
+_drawtext 99C 0 CODE 0 text14 dist/default/production\lab10.X.production.obj
+main@found 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+___lwdiv@divisor 13 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+_strcpy 1376 0 CODE 0 text11 dist/default/production\lab10.X.production.obj
+_strlen 12FA 0 CODE 0 text15 dist/default/production\lab10.X.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\lab10.X.production.obj
+__end_of_Rcmd2red 1376 0 CODE 0 text23 dist/default/production\lab10.X.production.obj
+__size_of_INTx_isr 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+stackhi F7F 0 ABS 0 - C:\Users\julia\AppData\Local\Temp\s8nc.obj
+stacklo 185 0 ABS 0 - C:\Users\julia\AppData\Local\Temp\s8nc.obj
+__Lintcode 8 0 CODE 0 intcode dist/default/production\lab10.X.production.obj
+__end_of_drawChar 864 0 CODE 0 text16 dist/default/production\lab10.X.production.obj
+__end_of_drawtext AB4 0 CODE 0 text14 dist/default/production\lab10.X.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production\lab10.X.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production\lab10.X.production.obj
+_ADCON0bits FC2 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_drawPixel 13A8 0 CODE 0 text19 dist/default/production\lab10.X.production.obj
+fillCircle@x0 F3 0 BANK0 1 cstackBANK0 dist/default/production\lab10.X.production.obj
+fillCircle@y0 F5 0 BANK0 1 cstackBANK0 dist/default/production\lab10.X.production.obj
+strcpy@from 13 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+_write_command 14F4 0 CODE 0 text26 dist/default/production\lab10.X.production.obj
+__Lspace_0 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__Lspace_1 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__Lspace_2 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+fillRectangle@h 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+fillRectangle@w 19 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+fillRectangle@x 23 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+fillRectangle@y 18 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__pbssCOMRAM 5E 0 COMRAM 1 bssCOMRAM dist/default/production\lab10.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\lab10.X.production.obj
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production\lab10.X.production.obj
+_Timing_Txt 54 0 COMRAM 1 dataCOMRAM dist/default/production\lab10.X.production.obj
+_PIR1bits F9E 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_PIR2bits FA1 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__Lend_init 18 0 CODE 0 end_init dist/default/production\lab10.X.production.obj
+__end_of_fillCircle 1170 0 CODE 0 text5 dist/default/production\lab10.X.production.obj
+__size_of_delay_ms 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\lab10.X.production.obj
+printf@ap 23 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+_fillScreen 144A 0 CODE 0 text12 dist/default/production\lab10.X.production.obj
+end_of_initialization F46 0 CODE 0 cinit dist/default/production\lab10.X.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\lab10.X.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production\lab10.X.production.obj
+__size_of_printf 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__size_of_TFT_GreenTab_Initialize 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+spiwrite@x 11 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+write_data@data_ 13 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__tft_type 6C 0 COMRAM 1 bssCOMRAM dist/default/production\lab10.X.production.obj
+___lwdiv@dividend 11 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+?___lwdiv 11 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+?___lwmod 18 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+_Time_Elapsed 64 0 COMRAM 1 bssCOMRAM dist/default/production\lab10.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\lab10.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\lab10.X.production.obj
+fillRectangle@color 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+_Init_Interrupt 1480 0 CODE 0 text33 dist/default/production\lab10.X.production.obj
+__Lramtop 1000 0 RAM 0 ramtop dist/default/production\lab10.X.production.obj
+__size_of_strcpy 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__size_of_strlen 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__end_of_Activate_Buzzer 14E4 0 CODE 0 text36 dist/default/production\lab10.X.production.obj
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\lab10.X.production.obj
+__pcinit ECE 0 CODE 0 cinit dist/default/production\lab10.X.production.obj
+__size_of_fillRect 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__ptext0 22E 0 CODE 0 text0 dist/default/production\lab10.X.production.obj
+__ptext1 1C 0 CODE 0 text1 dist/default/production\lab10.X.production.obj
+__ptext2 1504 0 CODE 0 text2 dist/default/production\lab10.X.production.obj
+__ptext3 1264 0 CODE 0 text3 dist/default/production\lab10.X.production.obj
+__ptext4 10BA 0 CODE 0 text4 dist/default/production\lab10.X.production.obj
+__ptext5 1116 0 CODE 0 text5 dist/default/production\lab10.X.production.obj
+__ptext6 864 0 CODE 0 text6 dist/default/production\lab10.X.production.obj
+__ptext7 3E6 0 CODE 0 text7 dist/default/production\lab10.X.production.obj
+__ptext8 151E 0 CODE 0 text8 dist/default/production\lab10.X.production.obj
+__ptext9 1466 0 CODE 0 text9 dist/default/production\lab10.X.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\lab10.X.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/production\lab10.X.production.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/production\lab10.X.production.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/production\lab10.X.production.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/production\lab10.X.production.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/production\lab10.X.production.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/production\lab10.X.production.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/production\lab10.X.production.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/production\lab10.X.production.obj
+__Ltext18 0 0 ABS 0 text18 dist/default/production\lab10.X.production.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/production\lab10.X.production.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/production\lab10.X.production.obj
+__Ltext21 0 0 ABS 0 text21 dist/default/production\lab10.X.production.obj
+__Ltext22 0 0 ABS 0 text22 dist/default/production\lab10.X.production.obj
+__Ltext23 0 0 ABS 0 text23 dist/default/production\lab10.X.production.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/production\lab10.X.production.obj
+__Ltext25 0 0 ABS 0 text25 dist/default/production\lab10.X.production.obj
+__Ltext26 0 0 ABS 0 text26 dist/default/production\lab10.X.production.obj
+__Ltext27 0 0 ABS 0 text27 dist/default/production\lab10.X.production.obj
+__Ltext28 0 0 ABS 0 text28 dist/default/production\lab10.X.production.obj
+__Ltext29 0 0 ABS 0 text29 dist/default/production\lab10.X.production.obj
+__Ltext30 0 0 ABS 0 text30 dist/default/production\lab10.X.production.obj
+__Ltext31 0 0 ABS 0 text31 dist/default/production\lab10.X.production.obj
+__Ltext32 0 0 ABS 0 text32 dist/default/production\lab10.X.production.obj
+__Ltext33 0 0 ABS 0 text33 dist/default/production\lab10.X.production.obj
+__Ltext34 0 0 ABS 0 text34 dist/default/production\lab10.X.production.obj
+__Ltext35 0 0 ABS 0 text35 dist/default/production\lab10.X.production.obj
+__Ltext36 0 0 ABS 0 text36 dist/default/production\lab10.X.production.obj
+__Ltext38 0 0 ABS 0 text38 dist/default/production\lab10.X.production.obj
+__Ltext39 0 0 ABS 0 text39 dist/default/production\lab10.X.production.obj
+__Ltext40 0 0 ABS 0 text40 dist/default/production\lab10.X.production.obj
+__ramtop 1000 0 RAM 0 ramtop C:\Users\julia\AppData\Local\Temp\s8nc.obj
+drawtext@size FA 0 BANK0 1 cstackBANK0 dist/default/production\lab10.X.production.obj
+putch@c 11 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+_INTx_isr 594 0 CODE 0 text39 dist/default/production\lab10.X.production.obj
+__Lpowerup 18 0 CODE 0 powerup dist/default/production\lab10.X.production.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\lab10.X.production.obj
+_drawCircle 3E6 0 CODE 0 text7 dist/default/production\lab10.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\lab10.X.production.obj
+drawPixel@x 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+drawPixel@y 18 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__end_of_INTx_isr 70E 0 CODE 0 text39 dist/default/production\lab10.X.production.obj
+drawPixel@color 19 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+_Enable_INT_Interrupt 1538 0 CODE 0 text34 dist/default/production\lab10.X.production.obj
+drawFastVLine@color 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+___param_bank 10 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__CFG_WDT$OFF 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+spiwrite@spidata 12 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\lab10.X.production.obj
+__end_of__initialization F46 0 CODE 0 cinit dist/default/production\lab10.X.production.obj
+_delay_ms 11C4 0 CODE 0 text29 dist/default/production\lab10.X.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\lab10.X.production.obj
+__size_of_spiwrite 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__pidataBANK0 1170 0 CODE 0 idataBANK0 dist/default/production\lab10.X.production.obj
+__pidataBANK1 F50 0 CODE 0 idataBANK1 dist/default/production\lab10.X.production.obj
+write_command@cmd_ 13 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\lab10.X.production.obj
+__end_of_fillScreen 1466 0 CODE 0 text12 dist/default/production\lab10.X.production.obj
+drawChar@color 30 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+fillCircle@r F7 0 BANK0 1 cstackBANK0 dist/default/production\lab10.X.production.obj
+__end_of_delay_ms 1216 0 CODE 0 text29 dist/default/production\lab10.X.production.obj
+_rowstart 6F 0 COMRAM 1 bssCOMRAM dist/default/production\lab10.X.production.obj
+__end_of_Init_Interrupt 1498 0 CODE 0 text33 dist/default/production\lab10.X.production.obj
+_Activate_Buzzer 14D2 0 CODE 0 text36 dist/default/production\lab10.X.production.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+_TXSTAbits FAC 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_T3CONbits FB1 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_write_data 14E4 0 CODE 0 text25 dist/default/production\lab10.X.production.obj
+__pmediumconst FDCE 0 MEDIUMCONST 0 mediumconst dist/default/production\lab10.X.production.obj
+_SSPCON1 FC6 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_SSPSTAT FC7 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_fillRect 12B0 0 CODE 0 text17 dist/default/production\lab10.X.production.obj
+drawChar@bg 32 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__Hend_init 1C 0 CODE 0 end_init dist/default/production\lab10.X.production.obj
+__size_of_write_command 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__end_of_font FECE 0 MEDIUMCONST 0 mediumconst dist/default/production\lab10.X.production.obj
+__end_of_main 3E6 0 CODE 0 text0 dist/default/production\lab10.X.production.obj
+__pintcode 8 0 CODE 0 intcode dist/default/production\lab10.X.production.obj
+__end_of_Rcmd1 BC4 0 CODE 0 text24 dist/default/production\lab10.X.production.obj
+__end_of_Rcmd3 CB6 0 CODE 0 text22 dist/default/production\lab10.X.production.obj
+printf@idx 22 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+printf@val 27 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__end_of_dpowers FFB4 0 MEDIUMCONST 0 mediumconst dist/default/production\lab10.X.production.obj
+__end_of_font2 FFAA 0 MEDIUMCONST 0 mediumconst dist/default/production\lab10.X.production.obj
+_PORTA F80 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_PORTB F81 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_PORTE F84 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_RCSTA FAB 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_Rcmd1 AB4 0 CODE 0 text24 dist/default/production\lab10.X.production.obj
+_Rcmd3 BC4 0 CODE 0 text22 dist/default/production\lab10.X.production.obj
+_SPBRG FAF 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_T0CON FD5 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_T1CON FCD 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_T2CON FCA 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_T3CON FB1 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_TMR0H FD7 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_TMR0L FD6 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_TMR1H FCF 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_TMR1L FCE 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_TRISA F92 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_TRISB F93 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_TRISC F94 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_TRISD F95 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_TRISE F96 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_TXREG FAD 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_TXSTA FAC 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__end_of_putch 1512 0 CODE 0 text2 dist/default/production\lab10.X.production.obj
+__end_of_fillRect 12FA 0 CODE 0 text17 dist/default/production\lab10.X.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production\lab10.X.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production\lab10.X.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production\lab10.X.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production\lab10.X.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production\lab10.X.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production\lab10.X.production.obj
+_color 100 0 BANK1 1 dataBANK1 dist/default/production\lab10.X.production.obj
+_font2 FECE 0 MEDIUMCONST 0 mediumconst dist/default/production\lab10.X.production.obj
+_nRBPU 7F8F 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_putch 1504 0 CODE 0 text2 dist/default/production\lab10.X.production.obj
+_colstart 6E 0 COMRAM 1 bssCOMRAM dist/default/production\lab10.X.production.obj
+_SSPSTATbits FC7 0 ABS 0 - dist/default/production\lab10.X.production.obj
+_CCP2CON FBA 0 ABS 0 - dist/default/production\lab10.X.production.obj
+__end_of_drawCircle 594 0 CODE 0 text7 dist/default/production\lab10.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\lab10.X.production.obj
+__HdataBANK1 0 0 ABS 0 dataBANK1 dist/default/production\lab10.X.production.obj
+_Wait_One_Sec 151E 0 CODE 0 text8 dist/default/production\lab10.X.production.obj
+OpenUSART@config 13 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__initialization ECE 0 CODE 0 cinit dist/default/production\lab10.X.production.obj
+__pbssBANK0 D4 0 BANK0 1 bssBANK0 dist/default/production\lab10.X.production.obj
+__pdataCOMRAM 3E 0 COMRAM 1 dataCOMRAM dist/default/production\lab10.X.production.obj
+__size_of_TIMER1_isr 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+drawtext@textsize 17F 0 BANK1 1 cstackBANK1 dist/default/production\lab10.X.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\lab10.X.production.obj
+___wmul@product 15 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+_spiwrite 1498 0 CODE 0 text27 dist/default/production\lab10.X.production.obj
+OpenUSART@spbrg 11 0 COMRAM 1 cstackCOMRAM dist/default/production\lab10.X.production.obj
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\lab10.X.production.obj
+_bit_count 6D 0 COMRAM 1 bssCOMRAM dist/default/production\lab10.X.production.obj
+__end_of_write_command 1504 0 CODE 0 text26 dist/default/production\lab10.X.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\lab10.X.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\lab10.X.production.obj
+__Hintcode 18 0 CODE 0 intcode dist/default/production\lab10.X.production.obj
+__size_of_Initialize_LCD_Screen 0 0 ABS 0 - dist/default/production\lab10.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+idloc 0 200000 200000 8 1
+cstackCOMRAM 1 1 1 6F 1
+reset_vec 0 0 0 4 1
+intcode 0 8 8 1536 1
+dataBANK0 1 80 80 7B 1
+dataBANK1 1 100 100 85 1
+mediumconst 0 FDCE FDCE 232 1
+config 0 300000 300000 E 1
