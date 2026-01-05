@@ -1,0 +1,94 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Thu Sep 18 15:11:56 2025
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000154
+                   .cinit    romdata   0x000154    program   0x000002
+.config_300001_BUILD/DEFAULT/PRODUCTION/LAB4P8.    romdata   0x300001    program   0x000001
+.config_300002_BUILD/DEFAULT/PRODUCTION/LAB4P8.    romdata   0x300002    program   0x000001
+.config_300003_BUILD/DEFAULT/PRODUCTION/LAB4P8.    romdata   0x300003    program   0x000001
+.config_300006_BUILD/DEFAULT/PRODUCTION/LAB4P8.    romdata   0x300006    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000155      
+                            0x300001    0x300003      
+                            0x300006    0x300006      
+            346 out of 66584 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                  GREATER   0x00013c    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+                MAIN_LOOP   0x000014    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+                 NGREATER   0x000144    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+         PERFORM_TASK_ADD   0x00005c    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+         PERFORM_TASK_AND   0x000078    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+         PERFORM_TASK_BCD   0x000094    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+        PERFORM_TASK_COMP   0x00004e    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+          PERFORM_TASK_OR   0x00006a    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+         PERFORM_TASK_XOR   0x000086    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+         PORTE_bit21_EQ00   0x000044    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+         PORTE_bit21_EQ01   0x00003a    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+         PORTE_bit21_EQ10   0x000036    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+         PORTE_bit21_EQ11   0x000032    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+           PORTE_bit2_EQ0   0x000028    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+           PORTE_bit2_EQ1   0x00001e    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+                 SKIP_ADD   0x000146    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+                    START   0x000000    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+                  SUB_ADD   0x0000ba    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+                  SUB_AND   0x0000f2    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+                  SUB_BCD   0x00012a    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+                 SUB_COMP   0x0000a2    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+                   SUB_OR   0x0000d6    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+                  SUB_XOR   0x00010e    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+            Z_CHECK_DONE1   0x0000b8    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+            Z_CHECK_DONE2   0x0000d4    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+            Z_CHECK_DONE3   0x0000f0    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+            Z_CHECK_DONE4   0x00010c    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+            Z_CHECK_DONE5   0x000128    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+            Z_CHECK_DONE6   0x000152    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    START   0x000000    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+                MAIN_LOOP   0x000014    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+           PORTE_bit2_EQ1   0x00001e    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+           PORTE_bit2_EQ0   0x000028    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+         PORTE_bit21_EQ11   0x000032    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+         PORTE_bit21_EQ10   0x000036    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+         PORTE_bit21_EQ01   0x00003a    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+         PORTE_bit21_EQ00   0x000044    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+        PERFORM_TASK_COMP   0x00004e    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+         PERFORM_TASK_ADD   0x00005c    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+          PERFORM_TASK_OR   0x00006a    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+         PERFORM_TASK_AND   0x000078    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+         PERFORM_TASK_XOR   0x000086    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+         PERFORM_TASK_BCD   0x000094    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+                 SUB_COMP   0x0000a2    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+            Z_CHECK_DONE1   0x0000b8    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+                  SUB_ADD   0x0000ba    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+            Z_CHECK_DONE2   0x0000d4    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+                   SUB_OR   0x0000d6    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+            Z_CHECK_DONE3   0x0000f0    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+                  SUB_AND   0x0000f2    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+            Z_CHECK_DONE4   0x00010c    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+                  SUB_XOR   0x00010e    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+            Z_CHECK_DONE5   0x000128    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+                  SUB_BCD   0x00012a    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+                  GREATER   0x00013c    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+                 NGREATER   0x000144    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+                 SKIP_ADD   0x000146    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+            Z_CHECK_DONE6   0x000152    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part8\lab4p8.X\lab4p8.asm
+
+

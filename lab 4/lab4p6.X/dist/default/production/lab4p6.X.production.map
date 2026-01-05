@@ -1,0 +1,42 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Thu Sep 18 15:00:53 2025
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000032
+                   .cinit    romdata   0x000032    program   0x000002
+.config_300001_BUILD/DEFAULT/PRODUCTION/LAB4P6.    romdata   0x300001    program   0x000001
+.config_300002_BUILD/DEFAULT/PRODUCTION/LAB4P6.    romdata   0x300002    program   0x000001
+.config_300003_BUILD/DEFAULT/PRODUCTION/LAB4P6.    romdata   0x300003    program   0x000001
+.config_300006_BUILD/DEFAULT/PRODUCTION/LAB4P6.    romdata   0x300006    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000033      
+                            0x300001    0x300003      
+                            0x300006    0x300006      
+            56 out of 66584 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                MAIN_LOOP   0x000014    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part6\lab4p6.X\lab4p6.asm
+                    START   0x000000    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part6\lab4p6.X\lab4p6.asm
+            Z_CHECK_DONE5   0x00002e    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part6\lab4p6.X\lab4p6.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    START   0x000000    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part6\lab4p6.X\lab4p6.asm
+                MAIN_LOOP   0x000014    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part6\lab4p6.X\lab4p6.asm
+            Z_CHECK_DONE5   0x00002e    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB4\Part6\lab4p6.X\lab4p6.asm
+
+
