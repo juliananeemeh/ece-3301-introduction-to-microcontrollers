@@ -1,0 +1,1909 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4620 ]
+[d frameptr 4065 ]
+"6 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/ST7735_TFT.c
+[e E3583 _BOOL `uc
+FALSE 0
+TRUE 1
+]
+"16 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Fan_Support.c
+[v _get_duty_cycle get_duty_cycle `(i  1 e 2 0 ]
+"39
+[v _Monitor_Fan Monitor_Fan `(v  1 e 0 0 ]
+"74
+[v _get_RPM get_RPM `(i  1 e 2 0 ]
+"83
+[v _Toggle_Fan Toggle_Fan `(v  1 e 0 0 ]
+"97
+[v _Turn_Off_Fan Turn_Off_Fan `(v  1 e 0 0 ]
+"106
+[v _Turn_On_Fan Turn_On_Fan `(v  1 e 0 0 ]
+"117
+[v _Increase_Duty_Cycle Increase_Duty_Cycle `(v  1 e 0 0 ]
+"137
+[v _Decrease_Duty_Cycle Decrease_Duty_Cycle `(v  1 e 0 0 ]
+"155
+[v _Do_Change_Fan_Timer_Mode_Plus Do_Change_Fan_Timer_Mode_Plus `(v  1 e 0 0 ]
+"167
+[v _Do_Change_Fan_Timer_Mode_Minus Do_Change_Fan_Timer_Mode_Minus `(v  1 e 0 0 ]
+"10 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/I2C_Soft.c
+[v _I2C_Init I2C_Init `(v  1 e 0 0 ]
+"16
+[v _I2C_Read I2C_Read `(uc  1 e 1 0 ]
+"37
+[v _I2C_Write I2C_Write `(v  1 e 0 0 ]
+"53
+[v _i2cNack i2cNack `(v  1 e 0 0 ]
+"59
+[v _i2cAck i2cAck `(v  1 e 0 0 ]
+"67
+[v _I2C_Start I2C_Start `(v  1 e 0 0 ]
+"75
+[v _I2C_ReStart I2C_ReStart `(v  1 e 0 0 ]
+"84
+[v _I2C_Stop I2C_Stop `(v  1 e 0 0 ]
+"92
+[v _i2cHighSda i2cHighSda `(v  1 e 0 0 ]
+"98
+[v _i2cLowSda i2cLowSda `(v  1 e 0 0 ]
+"105
+[v _i2cHighScl i2cHighScl `(v  1 e 0 0 ]
+"111
+[v _i2cLowScl i2cLowScl `(v  1 e 0 0 ]
+"118
+[v _I2C_Write_Address_Read_One_Byte I2C_Write_Address_Read_One_Byte `(uc  1 e 1 0 ]
+"131
+[v _I2C_Write_Address_Write_One_Byte I2C_Write_Address_Write_One_Byte `(v  1 e 0 0 ]
+"140
+[v _I2C_Write_Cmd_Only I2C_Write_Cmd_Only `(v  1 e 0 0 ]
+"148
+[v _I2C_Write_Cmd_Write_Data I2C_Write_Cmd_Write_Data `(v  1 e 0 0 ]
+"12 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/I2C_Support.c
+[v _DS1621_Init DS1621_Init `(v  1 e 0 0 ]
+"32
+[v _DS1621_Read_Temp DS1621_Read_Temp `(i  1 e 2 0 ]
+"48
+[v _DS3231_Read_Time DS3231_Read_Time `(v  1 e 0 0 ]
+"68
+[v _DS3231_Write_Time DS3231_Write_Time `(v  1 e 0 0 ]
+"18 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Interrupt.c
+[v _Init_Interrupt Init_Interrupt `(v  1 e 0 0 ]
+"41
+[v _Enable_INT_Interrupt Enable_INT_Interrupt `(v  1 e 0 0 ]
+"47
+[v _chkisr chkisr `IIH(v  1 e 0 0 ]
+"55
+[v _TIMER1_isr TIMER1_isr `(v  1 e 0 0 ]
+"63
+[v _force_nec_state0 force_nec_state0 `(v  1 e 0 0 ]
+"70
+[v _INT0_isr INT0_isr `(v  1 e 0 0 ]
+"181
+[v _INT1_isr INT1_isr `(v  1 e 0 0 ]
+"189
+[v _INT2_isr INT2_isr `(v  1 e 0 0 ]
+"81 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Main.c
+[v _Do_Init Do_Init `(v  1 e 0 0 ]
+"108
+[v _main main `(v  1 e 0 0 ]
+"251
+[v _Set_D1_RGB Set_D1_RGB `(v  1 e 0 0 ]
+"260
+[v _Set_D2_RGB Set_D2_RGB `(v  1 e 0 0 ]
+"273
+[v _Set_D3_RGB Set_D3_RGB `(v  1 e 0 0 ]
+"41 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Main_Screen.c
+[v _Initialize_Screen Initialize_Screen `(v  1 e 0 0 ]
+"100
+[v _Update_Screen Update_Screen `(v  1 e 0 0 ]
+"36 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Setup_Fan_Temp.c
+[v _Setup_Fan_Temp Setup_Fan_Temp `(v  1 e 0 0 ]
+"90
+[v _Increase_Fan_Temp Increase_Fan_Temp `(v  1 e 0 0 ]
+"104
+[v _Decrease_Fan_Temp Decrease_Fan_Temp `(v  1 e 0 0 ]
+"119
+[v _Do_Save_New_Fan_Temp Do_Save_New_Fan_Temp `(v  1 e 0 0 ]
+"127
+[v _Exit_Setup_Fan_Temp Exit_Setup_Fan_Temp `(v  1 e 0 0 ]
+"135
+[v _Initialize_Setup_Fan_Screen Initialize_Setup_Fan_Screen `(v  1 e 0 0 ]
+"169
+[v _Update_Setup_Fan_Screen Update_Setup_Fan_Screen `(v  1 e 0 0 ]
+"42 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Setup_Time.c
+[v _Do_Setup_Time Do_Setup_Time `(v  1 e 0 0 ]
+"110
+[v _Increase_Time Increase_Time `(v  1 e 0 0 ]
+"155
+[v _Decrease_Time Decrease_Time `(v  1 e 0 0 ]
+"199
+[v _Go_Next_Field Go_Next_Field `(v  1 e 0 0 ]
+"207
+[v _Go_Prev_Field Go_Prev_Field `(v  1 e 0 0 ]
+"214
+[v _Do_Save_New_Time Do_Save_New_Time `(v  1 e 0 0 ]
+"222
+[v _Exit_Time_Setup Exit_Time_Setup `(v  1 e 0 0 ]
+"229
+[v _Initialize_Setup_Time_Screen Initialize_Setup_Time_Screen `(v  1 e 0 0 ]
+"266
+[v _Update_Setup_Time_Screen Update_Setup_Time_Screen `(v  1 e 0 0 ]
+"290
+[v _Update_Setup_Screen_Cursor_Forward Update_Setup_Screen_Cursor_Forward `(v  1 e 0 0 ]
+"330
+[v _Update_Setup_Screen_Cursor_Backward Update_Setup_Screen_Cursor_Backward `(v  1 e 0 0 ]
+"11 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/ST7735_TFT.c
+[v _delay_ms delay_ms `(v  1 e 0 0 ]
+"137
+[v _spiwrite spiwrite `(v  1 e 0 0 ]
+"146
+[v _write_command write_command `(v  1 e 0 0 ]
+"157
+[v _write_data write_data `(v  1 e 0 0 ]
+"165
+[v _LCD_Reset LCD_Reset `(v  1 e 0 0 ]
+"229
+[v _Rcmd1 Rcmd1 `(v  1 e 0 0 ]
+"276
+[v _Rcmd2red Rcmd2red `(v  1 e 0 0 ]
+"286
+[v _Rcmd3 Rcmd3 `(v  1 e 0 0 ]
+"340
+[v _setAddrWindow setAddrWindow `(v  1 e 0 0 ]
+"355
+[v _drawPixel drawPixel `(v  1 e 0 0 ]
+"364
+[v _drawFastVLine drawFastVLine `(v  1 e 0 0 ]
+"385
+[v _fillRect fillRect `(v  1 e 0 0 ]
+"395
+[v _drawChar drawChar `(v  1 e 0 0 ]
+"422
+[v _drawtext drawtext `(v  1 e 0 0 ]
+"440
+[v _Rcmd2green Rcmd2green `(v  1 e 0 0 ]
+"451
+[v _fillRectangle fillRectangle `(v  1 e 0 0 ]
+"537
+[v _fillCircleHelper fillCircleHelper `(v  1 e 0 0 ]
+"567
+[v _fillScreen fillScreen `(v  1 e 0 0 ]
+"572
+[v _drawFastHLine drawFastHLine `(v  1 e 0 0 ]
+"592
+[v _TFT_GreenTab_Initialize TFT_GreenTab_Initialize `(v  1 e 0 0 ]
+"13 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/utils.c
+[v _check_for_button_input check_for_button_input `(uc  1 e 1 0 ]
+"47
+[v _bcd_2_dec bcd_2_dec `(uc  1 e 1 0 ]
+"54
+[v _dec_2_bcd dec_2_bcd `(i  1 e 2 0 ]
+"61
+[v _Do_Beep Do_Beep `(v  1 e 0 0 ]
+"72
+[v _Do_Beep_Good Do_Beep_Good `(v  1 e 0 0 ]
+"83
+[v _Do_Beep_Bad Do_Beep_Bad `(v  1 e 0 0 ]
+"94
+[v _Wait_Half_Sec Wait_Half_Sec `(v  1 e 0 0 ]
+"99
+[v _Activate_Buzzer Activate_Buzzer `(v  1 e 0 0 ]
+"107
+[v _Activate_Buzzer_500Hz Activate_Buzzer_500Hz `(v  1 e 0 0 ]
+"115
+[v _Activate_Buzzer_2KHz Activate_Buzzer_2KHz `(v  1 e 0 0 ]
+"131
+[v _Deactivate_Buzzer Deactivate_Buzzer `(v  1 e 0 0 ]
+"137
+[v _do_update_pwm do_update_pwm `(v  1 e 0 0 ]
+"151
+[v _Read_Volt Read_Volt `(f  1 e 3 0 ]
+"159
+[v _get_full_ADC get_full_ADC `(ui  1 e 2 0 ]
+"169
+[v _Init_ADC Init_ADC `(v  1 e 0 0 ]
+"177
+[v _Init_UART Init_UART `(v  1 e 0 0 ]
+"185
+[v _putch putch `(v  1 e 0 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"409 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+[v _fround fround `(d  1 s 3 fround ]
+"425
+[v _scale scale `(d  1 s 3 scale ]
+"464
+[v _printf printf `(i  1 e 2 0 ]
+"63 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\double.c
+[v ___flpack __flpack `(d  1 e 3 0 ]
+"88 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fladd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fldiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"60 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fldivl.c
+[v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\flmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\flsub.c
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"60 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftdivl.c
+[v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"27 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c
+[v _strcpy strcpy `(*.39uc  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"73 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+[v _OpenUSART OpenUSART `(v  1 e 0 0 ]
+"14 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Fan_Support.c
+[v _Timer_Table Timer_Table `[4]uc  1 e 4 0 ]
+"6 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Interrupt.c
+[v _bit_count bit_count `uc  1 e 1 0 ]
+"7
+[v _Time_Elapsed Time_Elapsed `ui  1 e 2 0 ]
+"11
+[v _Nec_code Nec_code `ul  1 e 4 0 ]
+"26 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Main.c
+[v _second second `uc  1 e 1 0 ]
+"27
+[v _minute minute `uc  1 e 1 0 ]
+"28
+[v _hour hour `uc  1 e 1 0 ]
+"29
+[v _dow dow `uc  1 e 1 0 ]
+"30
+[v _day day `uc  1 e 1 0 ]
+"31
+[v _month month `uc  1 e 1 0 ]
+"32
+[v _year year `uc  1 e 1 0 ]
+"34
+[v _found found `uc  1 e 1 0 ]
+"35
+[v _tempSecond tempSecond `uc  1 e 1 0 ]
+"36
+[v _tempF tempF `c  1 e 1 0 ]
+[v _tempC tempC `c  1 e 1 0 ]
+"37
+[v _setup_second setup_second `uc  1 e 1 0 ]
+[v _setup_minute setup_minute `uc  1 e 1 0 ]
+[v _setup_hour setup_hour `uc  1 e 1 0 ]
+[v _setup_day setup_day `uc  1 e 1 0 ]
+[v _setup_month setup_month `uc  1 e 1 0 ]
+[v _setup_year setup_year `uc  1 e 1 0 ]
+"39
+[v _fan_set_temp fan_set_temp `uc  1 e 1 0 ]
+"40
+[v _Nec_state Nec_state `uc  1 e 1 0 ]
+"41
+[v _volt volt `f  1 e 3 0 ]
+"42
+[v _INT1_flag INT1_flag `uc  1 e 1 0 ]
+[v _INT2_flag INT2_flag `uc  1 e 1 0 ]
+"43
+[v _light_flag light_flag `uc  1 e 1 0 ]
+"45
+[v _Nec_ok Nec_ok `s  1 e 2 0 ]
+"46
+[v _Nec_Button Nec_Button `uc  1 e 1 0 ]
+"47
+[v _FAN FAN `uc  1 e 1 0 ]
+"48
+[v _duty_cycle duty_cycle `uc  1 e 1 0 ]
+"50
+[v _rpm rpm `i  1 e 2 0 ]
+"52
+[v _FANMODE FANMODE `uc  1 e 1 0 ]
+"53
+[v _FAN_TIMER_MODE FAN_TIMER_MODE `uc  1 e 1 0 ]
+"54
+[v _FAN_TIMER_TIME FAN_TIMER_TIME `uc  1 e 1 0 ]
+"55
+[v _SYSTEM_ON SYSTEM_ON `uc  1 e 1 0 ]
+"59
+[v _txt txt `*.2uc  1 e 2 0 ]
+"60
+[v _tempC_Txt tempC_Txt `[4]uc  1 e 4 0 ]
+"61
+[v _tempF_Txt tempF_Txt `[5]uc  1 e 5 0 ]
+"62
+[v _time_Txt time_Txt `[9]uc  1 e 9 0 ]
+"63
+[v _date_Txt date_Txt `[9]uc  1 e 9 0 ]
+"64
+[v _Fan_Timer_Mode_Txt Fan_Timer_Mode_Txt `[4]uc  1 e 4 0 ]
+"65
+[v _Fan_Timer_Txt Fan_Timer_Txt `[4]uc  1 e 4 0 ]
+"66
+[v _Fan_Set_Temp_Txt Fan_Set_Temp_Txt `[4]uc  1 e 4 0 ]
+"67
+[v _Fan_Mode_Txt Fan_Mode_Txt `[5]uc  1 e 5 0 ]
+"68
+[v _Fan_SW_Txt Fan_SW_Txt `[4]uc  1 e 4 0 ]
+"71
+[v _DC_Txt DC_Txt `[4]uc  1 e 4 0 ]
+"72
+[v _Volt_Txt Volt_Txt `[6]uc  1 e 6 0 ]
+"74
+[v _RPM_Txt RPM_Txt `[5]uc  1 e 5 0 ]
+"76
+[v _setup_time setup_time `[9]uc  1 e 9 0 ]
+"77
+[v _setup_date setup_date `[9]uc  1 e 9 0 ]
+"79
+[v _setup_fan_set_text setup_fan_set_text `[5]uc  1 e 5 0 ]
+"39 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Main_Screen.c
+[v _Timing_Txt Timing_Txt `[23]uc  1 e 23 0 ]
+"14 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Setup_Fan_Temp.c
+[v _setup_fan_set_temp setup_fan_set_temp `uc  1 e 1 0 ]
+"20
+[v _In_Fan_Temp_Setup In_Fan_Temp_Setup `uc  1 e 1 0 ]
+"30 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Setup_Time.c
+[v _In_Time_Setup In_Time_Setup `uc  1 e 1 0 ]
+"31
+[v _Select_Field Select_Field `uc  1 e 1 0 ]
+"6 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/ST7735_TFT.c
+[v _wrap wrap `E3583  1 e 1 0 ]
+"8
+[v _colstart colstart `uc  1 e 1 0 ]
+[v _rowstart rowstart `uc  1 e 1 0 ]
+[v __tft_type _tft_type `uc  1 e 1 0 ]
+"34
+[v _font font `C[255]uc  1 e 255 0 ]
+"89
+[v _font2 font2 `C[220]uc  1 e 220 0 ]
+"49 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18f4620.h
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"187
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+[s S151 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"405
+[s S160 . 1 `uc 1 T1OSO 1 0 :1:0 
+`uc 1 T1OSI 1 0 :1:1 
+`uc 1 CCP1 1 0 :1:2 
+`uc 1 SCK 1 0 :1:3 
+`uc 1 SDI 1 0 :1:4 
+`uc 1 SDO 1 0 :1:5 
+`uc 1 TX 1 0 :1:6 
+`uc 1 RX 1 0 :1:7 
+]
+[s S169 . 1 `uc 1 T13CKI 1 0 :1:0 
+`uc 1 CCP2 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SCL 1 0 :1:3 
+`uc 1 SDA 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CK 1 0 :1:6 
+`uc 1 DT 1 0 :1:7 
+]
+[s S178 . 1 `uc 1 T1CKI 1 0 :1:0 
+]
+[s S180 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PA1 1 0 :1:2 
+]
+[s S183 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PA2 1 0 :1:1 
+]
+[u S186 . 1 `S151 1 . 1 0 `S160 1 . 1 0 `S169 1 . 1 0 `S178 1 . 1 0 `S180 1 . 1 0 `S183 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES186  1 e 1 @3970 ]
+[s S47 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"571
+[s S56 . 1 `uc 1 PSP0 1 0 :1:0 
+`uc 1 PSP1 1 0 :1:1 
+`uc 1 PSP2 1 0 :1:2 
+`uc 1 PSP3 1 0 :1:3 
+`uc 1 PSP4 1 0 :1:4 
+`uc 1 PSP5 1 0 :1:5 
+`uc 1 PSP6 1 0 :1:6 
+`uc 1 PSP7 1 0 :1:7 
+]
+[s S65 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 P1B 1 0 :1:5 
+`uc 1 P1C 1 0 :1:6 
+`uc 1 P1D 1 0 :1:7 
+]
+[s S70 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 SS2 1 0 :1:7 
+]
+[u S73 . 1 `S47 1 . 1 0 `S56 1 . 1 0 `S65 1 . 1 0 `S70 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES73  1 e 1 @3971 ]
+"675
+[v _PORTE PORTE `VEuc  1 e 1 @3972 ]
+"1633
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"1854
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"2075
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S245 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"2107
+[u S263 . 1 `S245 1 . 1 0 `S151 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES263  1 e 1 @3988 ]
+"2296
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S291 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"2328
+[u S309 . 1 `S291 1 . 1 0 `S47 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES309  1 e 1 @3989 ]
+"2517
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+[s S628 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+"2769
+[s S637 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RC1IE 1 0 :1:5 
+]
+[s S640 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IE 1 0 :1:4 
+]
+[u S643 . 1 `S628 1 . 1 0 `S637 1 . 1 0 `S640 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES643  1 e 1 @3997 ]
+[s S593 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"2848
+[s S602 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RC1IF 1 0 :1:5 
+]
+[s S605 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+]
+[u S608 . 1 `S593 1 . 1 0 `S602 1 . 1 0 `S605 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES608  1 e 1 @3998 ]
+[s S1311 . 1 `uc 1 CCP2IF 1 0 :1:0 
+`uc 1 TMR3IF 1 0 :1:1 
+`uc 1 HLVDIF 1 0 :1:2 
+`uc 1 BCLIF 1 0 :1:3 
+`uc 1 EEIF 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CMIF 1 0 :1:6 
+`uc 1 OSCFIF 1 0 :1:7 
+]
+"3067
+[s S1320 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIF 1 0 :1:2 
+]
+[u S1323 . 1 `S1311 1 . 1 0 `S1320 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES1323  1 e 1 @4001 ]
+"3265
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+[s S2233 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3306
+[s S2242 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ADEN 1 0 :1:3 
+]
+[s S2245 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SRENA 1 0 :1:5 
+]
+[s S2248 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[s S2251 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S2254 . 1 `uc 1 RCD8 1 0 :1:0 
+]
+[u S2256 . 1 `S2233 1 . 1 0 `S2242 1 . 1 0 `S2245 1 . 1 0 `S2248 1 . 1 0 `S2251 1 . 1 0 `S2254 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES2256  1 e 1 @4011 ]
+"3474
+[v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
+[s S2146 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3534
+[s S2155 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 BRGH1 1 0 :1:2 
+]
+[s S2158 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 CSRC1 1 0 :1:7 
+]
+[s S2161 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SENDB1 1 0 :1:3 
+]
+[s S2164 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 SYNC1 1 0 :1:4 
+]
+[s S2167 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 TRMT1 1 0 :1:1 
+]
+[s S2170 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX91 1 0 :1:6 
+]
+[s S2173 . 1 `uc 1 TX9D1 1 0 :1:0 
+]
+[s S2175 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 TXEN1 1 0 :1:5 
+]
+[s S2178 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[s S2181 . 1 `uc 1 TXD8 1 0 :1:0 
+]
+[u S2183 . 1 `S2146 1 . 1 0 `S2155 1 . 1 0 `S2158 1 . 1 0 `S2161 1 . 1 0 `S2164 1 . 1 0 `S2167 1 . 1 0 `S2170 1 . 1 0 `S2173 1 . 1 0 `S2175 1 . 1 0 `S2178 1 . 1 0 `S2181 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES2183  1 e 1 @4012 ]
+"3771
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"3793
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"3804
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @4016 ]
+"3810
+[v _T3CON T3CON `VEuc  1 e 1 @4017 ]
+[s S1339 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T3SYNC 1 0 :1:2 
+]
+"3849
+[s S1342 . 1 `uc 1 TMR3ON 1 0 :1:0 
+`uc 1 TMR3CS 1 0 :1:1 
+`uc 1 nT3SYNC 1 0 :1:2 
+`uc 1 T3CCP1 1 0 :1:3 
+`uc 1 T3CKPS 1 0 :2:4 
+`uc 1 T3CCP2 1 0 :1:6 
+`uc 1 RD16 1 0 :1:7 
+]
+[s S1350 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T3SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T3CKPS0 1 0 :1:4 
+`uc 1 T3CKPS1 1 0 :1:5 
+]
+[s S1356 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 RD163 1 0 :1:7 
+]
+[s S1359 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SOSCEN3 1 0 :1:3 
+]
+[s S1362 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 T3RD16 1 0 :1:7 
+]
+[u S1365 . 1 `S1339 1 . 1 0 `S1342 1 . 1 0 `S1350 1 . 1 0 `S1356 1 . 1 0 `S1359 1 . 1 0 `S1362 1 . 1 0 ]
+[v _T3CONbits T3CONbits `VES1365  1 e 1 @4017 ]
+"3929
+[v _TMR3L TMR3L `VEuc  1 e 1 @4018 ]
+"4435
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @4026 ]
+"4519
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @4027 ]
+"4531
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @4029 ]
+"4633
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @4030 ]
+"4645
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"4715
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"4805
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S1906 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"4853
+[s S1909 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+]
+[s S1916 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+]
+[s S1923 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S1926 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S1929 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S1932 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[s S1935 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[u S1938 . 1 `S1906 1 . 1 0 `S1909 1 . 1 0 `S1906 1 . 1 0 `S1916 1 . 1 0 `S1923 1 . 1 0 `S1926 1 . 1 0 `S1929 1 . 1 0 `S1932 1 . 1 0 `S1935 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES1938  1 e 1 @4034 ]
+"4933
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"4939
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"5006
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @4038 ]
+"5075
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @4039 ]
+[s S1420 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+"5170
+[s S1423 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S1426 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S1441 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S1446 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 A 1 0 :1:5 
+]
+[s S1451 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S1456 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S1461 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S1464 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S1467 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S1472 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 DA 1 0 :1:5 
+]
+[s S1475 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+]
+[s S1478 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 START 1 0 :1:3 
+]
+[s S1481 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 STOP 1 0 :1:4 
+]
+[s S1484 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+[s S1487 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S1490 . 1 `S1420 1 . 1 0 `S1423 1 . 1 0 `S1426 1 . 1 0 `S1420 1 . 1 0 `S1423 1 . 1 0 `S1441 1 . 1 0 `S1446 1 . 1 0 `S1451 1 . 1 0 `S1456 1 . 1 0 `S1461 1 . 1 0 `S1464 1 . 1 0 `S1467 1 . 1 0 `S1472 1 . 1 0 `S1475 1 . 1 0 `S1478 1 . 1 0 `S1481 1 . 1 0 `S1484 1 . 1 0 `S1487 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES1490  1 e 1 @4039 ]
+"5320
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
+"5326
+[v _T2CON T2CON `VEuc  1 e 1 @4042 ]
+"5396
+[v _PR2 PR2 `VEuc  1 e 1 @4043 ]
+"5511
+[v _T1CON T1CON `VEuc  1 e 1 @4045 ]
+[s S680 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T1SYNC 1 0 :1:2 
+]
+"5546
+[s S683 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 TMR1CS 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 T1RUN 1 0 :1:6 
+`uc 1 RD16 1 0 :1:7 
+]
+[s S691 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[s S697 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SOSCEN 1 0 :1:3 
+]
+[s S700 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 T1RD16 1 0 :1:7 
+]
+[u S703 . 1 `S680 1 . 1 0 `S683 1 . 1 0 `S691 1 . 1 0 `S697 1 . 1 0 `S700 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES703  1 e 1 @4045 ]
+"5621
+[v _TMR1L TMR1L `VEuc  1 e 1 @4046 ]
+"5627
+[v _TMR1H TMR1H `VEuc  1 e 1 @4047 ]
+"6061
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+"6219
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"6225
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+[s S516 . 1 `uc 1 INT1IF 1 0 :1:0 
+`uc 1 INT2IF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 INT1IE 1 0 :1:3 
+`uc 1 INT2IE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 INT1IP 1 0 :1:6 
+`uc 1 INT2IP 1 0 :1:7 
+]
+"6497
+[s S525 . 1 `uc 1 INT1F 1 0 :1:0 
+`uc 1 INT2F 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 INT1E 1 0 :1:3 
+`uc 1 INT2E 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 INT1P 1 0 :1:6 
+`uc 1 INT2P 1 0 :1:7 
+]
+[u S534 . 1 `S516 1 . 1 0 `S525 1 . 1 0 ]
+[v _INTCON3bits INTCON3bits `VES534  1 e 1 @4080 ]
+[s S556 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"6586
+[s S559 . 1 `uc 1 RBIP 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+[s S568 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 RBPU 1 0 :1:7 
+]
+[u S571 . 1 `S556 1 . 1 0 `S559 1 . 1 0 `S568 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES571  1 e 1 @4081 ]
+[s S429 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"6682
+[s S438 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S447 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[s S456 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S465 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S469 . 1 `S429 1 . 1 0 `S438 1 . 1 0 `S447 1 . 1 0 `S456 1 . 1 0 `S465 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES469  1 e 1 @4082 ]
+"7716
+[v _RBPU RBPU `VEb  1 e 0 @32655 ]
+"8088
+[v _TRMT TRMT `VEb  1 e 0 @32097 ]
+"354 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+[v _dpowers dpowers `C[10]ul  1 s 40 dpowers ]
+"362
+[v _hexpowers hexpowers `C[8]ul  1 s 32 hexpowers ]
+"7 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\powers.c
+[v __powers_ _powers_ `C[13]d  1 e 39 0 ]
+"39
+[v __npowers_ _npowers_ `C[13]d  1 e 39 0 ]
+"108 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Main.c
+[v _main main `(v  1 e 0 0 ]
+{
+"248
+} 0
+"100 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Main_Screen.c
+[v _Update_Screen Update_Screen `(v  1 e 0 0 ]
+{
+"121
+[v Update_Screen@neg_tempF neg_tempF `i  1 a 2 77 ]
+"107
+[v Update_Screen@neg_tempC neg_tempC `i  1 a 2 75 ]
+"219
+} 0
+"83 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Fan_Support.c
+[v _Toggle_Fan Toggle_Fan `(v  1 e 0 0 ]
+{
+"95
+} 0
+"106
+[v _Turn_On_Fan Turn_On_Fan `(v  1 e 0 0 ]
+{
+"114
+} 0
+"36 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Setup_Fan_Temp.c
+[v _Setup_Fan_Temp Setup_Fan_Temp `(v  1 e 0 0 ]
+{
+"88
+} 0
+"135
+[v _Initialize_Setup_Fan_Screen Initialize_Setup_Fan_Screen `(v  1 e 0 0 ]
+{
+"167
+} 0
+"90
+[v _Increase_Fan_Temp Increase_Fan_Temp `(v  1 e 0 0 ]
+{
+"102
+} 0
+"127
+[v _Exit_Setup_Fan_Temp Exit_Setup_Fan_Temp `(v  1 e 0 0 ]
+{
+"132
+} 0
+"119
+[v _Do_Save_New_Fan_Temp Do_Save_New_Fan_Temp `(v  1 e 0 0 ]
+{
+"125
+} 0
+"104
+[v _Decrease_Fan_Temp Decrease_Fan_Temp `(v  1 e 0 0 ]
+{
+"117
+} 0
+"169
+[v _Update_Setup_Fan_Screen Update_Setup_Fan_Screen `(v  1 e 0 0 ]
+{
+"173
+[v Update_Setup_Fan_Screen@dc_char3 dc_char3 `uc  1 a 1 75 ]
+"172
+[v Update_Setup_Fan_Screen@dc_char2 dc_char2 `uc  1 a 1 74 ]
+"171
+[v Update_Setup_Fan_Screen@dc_char1 dc_char1 `uc  1 a 1 73 ]
+"181
+} 0
+"117 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Fan_Support.c
+[v _Increase_Duty_Cycle Increase_Duty_Cycle `(v  1 e 0 0 ]
+{
+"135
+} 0
+"42 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Setup_Time.c
+[v _Do_Setup_Time Do_Setup_Time `(v  1 e 0 0 ]
+{
+"108
+} 0
+"74 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Fan_Support.c
+[v _get_RPM get_RPM `(i  1 e 2 0 ]
+{
+"77
+[v get_RPM@RPS RPS `i  1 a 2 32 ]
+"81
+} 0
+"13 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/utils.c
+[v _check_for_button_input check_for_button_input `(uc  1 e 1 0 ]
+{
+"23
+[v check_for_button_input@j j `i  1 a 2 21 ]
+"15
+[v check_for_button_input@array1 array1 `[21]uc  1 a 21 0 ]
+"14
+[v check_for_button_input@F4238 F4238 `[21]uc  1 s 21 F4238 ]
+"45
+} 0
+"41 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Interrupt.c
+[v _Enable_INT_Interrupt Enable_INT_Interrupt `(v  1 e 0 0 ]
+{
+"45
+} 0
+"47 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/utils.c
+[v _bcd_2_dec bcd_2_dec `(uc  1 e 1 0 ]
+{
+[v bcd_2_dec@bcd bcd `uc  1 a 1 wreg ]
+"49
+[v bcd_2_dec@dec dec `i  1 a 2 18 ]
+"47
+[v bcd_2_dec@bcd bcd `uc  1 a 1 wreg ]
+"50
+[v bcd_2_dec@bcd bcd `uc  1 a 1 20 ]
+"52
+} 0
+"273 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Main.c
+[v _Set_D3_RGB Set_D3_RGB `(v  1 e 0 0 ]
+{
+"274
+[v Set_D3_RGB@FAN_TIMER_MODE FAN_TIMER_MODE `uc  1 a 1 wreg ]
+"275
+[v Set_D3_RGB@j j `i  1 a 2 17 ]
+"274
+[v Set_D3_RGB@FAN_TIMER_MODE FAN_TIMER_MODE `uc  1 a 1 wreg ]
+"276
+[v Set_D3_RGB@FAN_TIMER_MODE FAN_TIMER_MODE `uc  1 a 1 19 ]
+"285
+} 0
+"260
+[v _Set_D2_RGB Set_D2_RGB `(v  1 e 0 0 ]
+{
+"264
+[v Set_D2_RGB@y y `uc  1 a 1 33 ]
+"261
+[v Set_D2_RGB@rpm rpm `i  1 p 2 30 ]
+"271
+} 0
+"251
+[v _Set_D1_RGB Set_D1_RGB `(v  1 e 0 0 ]
+{
+"252
+[v Set_D1_RGB@duty_cycle duty_cycle `uc  1 a 1 wreg ]
+"254
+[v Set_D1_RGB@x x `i  1 a 2 32 ]
+"252
+[v Set_D1_RGB@duty_cycle duty_cycle `uc  1 a 1 wreg ]
+"254
+[v Set_D1_RGB@duty_cycle duty_cycle `uc  1 a 1 31 ]
+"258
+} 0
+"151 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/utils.c
+[v _Read_Volt Read_Volt `(f  1 e 3 0 ]
+{
+[v Read_Volt@ADC_Channel ADC_Channel `uc  1 a 1 wreg ]
+"155
+[v Read_Volt@volt volt `f  1 a 3 63 ]
+"154
+[v Read_Volt@nStep nStep `i  1 a 2 67 ]
+"151
+[v Read_Volt@ADC_Channel ADC_Channel `uc  1 a 1 wreg ]
+"153
+[v Read_Volt@ADC_Channel ADC_Channel `uc  1 a 1 66 ]
+"157
+} 0
+"159
+[v _get_full_ADC get_full_ADC `(ui  1 e 2 0 ]
+{
+"161
+[v get_full_ADC@result result `ui  1 a 2 20 ]
+"167
+} 0
+"32 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 27 ]
+"32
+[v ___awtoft@c c `i  1 p 2 24 ]
+"42
+} 0
+"39 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Fan_Support.c
+[v _Monitor_Fan Monitor_Fan `(v  1 e 0 0 ]
+{
+"72
+} 0
+"16
+[v _get_duty_cycle get_duty_cycle `(i  1 e 2 0 ]
+{
+"18
+[v get_duty_cycle@dc dc `i  1 a 2 28 ]
+"16
+[v get_duty_cycle@temp temp `i  1 p 2 22 ]
+[v get_duty_cycle@set_temp set_temp `i  1 p 2 24 ]
+"37
+} 0
+"229 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Setup_Time.c
+[v _Initialize_Setup_Time_Screen Initialize_Setup_Time_Screen `(v  1 e 0 0 ]
+{
+"264
+} 0
+"110
+[v _Increase_Time Increase_Time `(v  1 e 0 0 ]
+{
+"153
+} 0
+"207
+[v _Go_Prev_Field Go_Prev_Field `(v  1 e 0 0 ]
+{
+"212
+} 0
+"330
+[v _Update_Setup_Screen_Cursor_Backward Update_Setup_Screen_Cursor_Backward `(v  1 e 0 0 ]
+{
+[v Update_Setup_Screen_Cursor_Backward@field field `uc  1 a 1 wreg ]
+"332
+[v Update_Setup_Screen_Cursor_Backward@xinc xinc `uc  1 a 1 47 ]
+"333
+[v Update_Setup_Screen_Cursor_Backward@yinc yinc `uc  1 a 1 46 ]
+"330
+[v Update_Setup_Screen_Cursor_Backward@field field `uc  1 a 1 wreg ]
+"332
+[v Update_Setup_Screen_Cursor_Backward@field field `uc  1 a 1 45 ]
+"367
+} 0
+"199
+[v _Go_Next_Field Go_Next_Field `(v  1 e 0 0 ]
+{
+"205
+} 0
+"290
+[v _Update_Setup_Screen_Cursor_Forward Update_Setup_Screen_Cursor_Forward `(v  1 e 0 0 ]
+{
+[v Update_Setup_Screen_Cursor_Forward@field field `uc  1 a 1 wreg ]
+"292
+[v Update_Setup_Screen_Cursor_Forward@xinc xinc `uc  1 a 1 47 ]
+"293
+[v Update_Setup_Screen_Cursor_Forward@yinc yinc `uc  1 a 1 46 ]
+"290
+[v Update_Setup_Screen_Cursor_Forward@field field `uc  1 a 1 wreg ]
+"292
+[v Update_Setup_Screen_Cursor_Forward@field field `uc  1 a 1 45 ]
+"328
+} 0
+"222
+[v _Exit_Time_Setup Exit_Time_Setup `(v  1 e 0 0 ]
+{
+"227
+} 0
+"214
+[v _Do_Save_New_Time Do_Save_New_Time `(v  1 e 0 0 ]
+{
+"220
+} 0
+"41 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Main_Screen.c
+[v _Initialize_Screen Initialize_Screen `(v  1 e 0 0 ]
+{
+"98
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c
+[v _strcpy strcpy `(*.39uc  1 e 2 0 ]
+{
+"15
+[v strcpy@cp cp `*.39uc  1 a 2 20 ]
+"8
+[v strcpy@to to `*.39uc  1 p 2 16 ]
+[v strcpy@from from `*.25Cuc  1 p 2 18 ]
+"24
+} 0
+"567 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/ST7735_TFT.c
+[v _fillScreen fillScreen `(v  1 e 0 0 ]
+{
+[v fillScreen@color color `ui  1 p 2 35 ]
+"570
+} 0
+"451
+[v _fillRectangle fillRectangle `(v  1 e 0 0 ]
+{
+[v fillRectangle@x x `uc  1 a 1 wreg ]
+"453
+[v fillRectangle@lo lo `uc  1 a 1 33 ]
+[v fillRectangle@hi hi `uc  1 a 1 32 ]
+"451
+[v fillRectangle@x x `uc  1 a 1 wreg ]
+[v fillRectangle@y y `uc  1 p 1 23 ]
+[v fillRectangle@w w `uc  1 p 1 24 ]
+[v fillRectangle@h h `uc  1 p 1 25 ]
+[v fillRectangle@color color `ui  1 p 2 26 ]
+"454
+[v fillRectangle@x x `uc  1 a 1 34 ]
+"474
+} 0
+"592
+[v _TFT_GreenTab_Initialize TFT_GreenTab_Initialize `(v  1 e 0 0 ]
+{
+"607
+} 0
+"286
+[v _Rcmd3 Rcmd3 `(v  1 e 0 0 ]
+{
+"302
+} 0
+"276
+[v _Rcmd2red Rcmd2red `(v  1 e 0 0 ]
+{
+"284
+} 0
+"229
+[v _Rcmd1 Rcmd1 `(v  1 e 0 0 ]
+{
+"274
+} 0
+"165
+[v _LCD_Reset LCD_Reset `(v  1 e 0 0 ]
+{
+"170
+} 0
+"11
+[v _delay_ms delay_ms `(v  1 e 0 0 ]
+{
+"17
+[v delay_ms@count count `i  1 a 2 26 ]
+"11
+[v delay_ms@ms ms `i  1 p 2 22 ]
+"32
+} 0
+"68 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/I2C_Support.c
+[v _DS3231_Write_Time DS3231_Write_Time `(v  1 e 0 0 ]
+{
+"71
+[v DS3231_Write_Time@Address Address `uc  1 a 1 74 ]
+"70
+[v DS3231_Write_Time@Device Device `uc  1 a 1 73 ]
+"90
+} 0
+"54 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/utils.c
+[v _dec_2_bcd dec_2_bcd `(i  1 e 2 0 ]
+{
+[v dec_2_bcd@dec dec `uc  1 a 1 wreg ]
+"56
+[v dec_2_bcd@bcd bcd `i  1 a 2 70 ]
+"54
+[v dec_2_bcd@dec dec `uc  1 a 1 wreg ]
+"57
+[v dec_2_bcd@dec dec `uc  1 a 1 72 ]
+"59
+} 0
+"48 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/I2C_Support.c
+[v _DS3231_Read_Time DS3231_Read_Time `(v  1 e 0 0 ]
+{
+"50
+[v DS3231_Read_Time@Device Device `uc  1 a 1 20 ]
+"51
+[v DS3231_Read_Time@Address Address `uc  1 a 1 19 ]
+"66
+} 0
+"155 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Setup_Time.c
+[v _Decrease_Time Decrease_Time `(v  1 e 0 0 ]
+{
+"197
+} 0
+"266
+[v _Update_Setup_Time_Screen Update_Setup_Time_Screen `(v  1 e 0 0 ]
+{
+"288
+} 0
+"422 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/ST7735_TFT.c
+[v _drawtext drawtext `(v  1 e 0 0 ]
+{
+[v drawtext@x x `uc  1 a 1 wreg ]
+"425
+[v drawtext@i i `ui  1 a 2 69 ]
+[v drawtext@textsize textsize `ui  1 a 2 67 ]
+"424
+[v drawtext@cursor_x cursor_x `uc  1 a 1 72 ]
+[v drawtext@cursor_y cursor_y `uc  1 a 1 71 ]
+"422
+[v drawtext@x x `uc  1 a 1 wreg ]
+[v drawtext@y y `uc  1 p 1 56 ]
+[v drawtext@_text _text `*.39uc  1 p 2 57 ]
+[v drawtext@color color `ui  1 p 2 59 ]
+[v drawtext@bg bg `ui  1 p 2 61 ]
+[v drawtext@size size `uc  1 p 1 63 ]
+"426
+[v drawtext@x x `uc  1 a 1 66 ]
+"438
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"6
+[v strlen@cp cp `*.39Cuc  1 a 2 20 ]
+"4
+[v strlen@s s `*.39Cuc  1 p 2 16 ]
+"13
+} 0
+"395 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/ST7735_TFT.c
+[v _drawChar drawChar `(v  1 e 0 0 ]
+{
+[v drawChar@x x `uc  1 a 1 wreg ]
+"404
+[v drawChar@line line `uc  1 a 1 52 ]
+"397
+[v drawChar@i i `uc  1 a 1 55 ]
+[v drawChar@j j `uc  1 a 1 54 ]
+"395
+[v drawChar@x x `uc  1 a 1 wreg ]
+[v drawChar@y y `uc  1 p 1 45 ]
+[v drawChar@c c `uc  1 p 1 46 ]
+[v drawChar@color color `ui  1 p 2 47 ]
+[v drawChar@bg bg `ui  1 p 2 49 ]
+[v drawChar@size size `uc  1 p 1 51 ]
+"398
+[v drawChar@x x `uc  1 a 1 53 ]
+"420
+} 0
+"385
+[v _fillRect fillRect `(v  1 e 0 0 ]
+{
+[v fillRect@x x `uc  1 a 1 wreg ]
+"387
+[v fillRect@i i `i  1 a 2 43 ]
+"385
+[v fillRect@x x `uc  1 a 1 wreg ]
+[v fillRect@y y `uc  1 p 1 34 ]
+[v fillRect@w w `uc  1 p 1 35 ]
+[v fillRect@h h `uc  1 p 1 36 ]
+[v fillRect@color color `ui  1 p 2 37 ]
+"389
+[v fillRect@x x `uc  1 a 1 42 ]
+"393
+} 0
+"364
+[v _drawFastVLine drawFastVLine `(v  1 e 0 0 ]
+{
+[v drawFastVLine@x x `uc  1 a 1 wreg ]
+"366
+[v drawFastVLine@lo lo `uc  1 a 1 32 ]
+[v drawFastVLine@hi hi `uc  1 a 1 31 ]
+"364
+[v drawFastVLine@x x `uc  1 a 1 wreg ]
+[v drawFastVLine@y y `uc  1 p 1 23 ]
+[v drawFastVLine@h h `uc  1 p 1 24 ]
+[v drawFastVLine@color color `ui  1 p 2 25 ]
+"367
+[v drawFastVLine@x x `uc  1 a 1 33 ]
+"383
+} 0
+"355
+[v _drawPixel drawPixel `(v  1 e 0 0 ]
+{
+[v drawPixel@x x `uc  1 a 1 wreg ]
+[v drawPixel@x x `uc  1 a 1 wreg ]
+[v drawPixel@y y `uc  1 p 1 23 ]
+[v drawPixel@color color `ui  1 p 2 24 ]
+"357
+[v drawPixel@x x `uc  1 a 1 26 ]
+"362
+} 0
+"340
+[v _setAddrWindow setAddrWindow `(v  1 e 0 0 ]
+{
+[v setAddrWindow@x0 x0 `uc  1 a 1 wreg ]
+[v setAddrWindow@x0 x0 `uc  1 a 1 wreg ]
+[v setAddrWindow@y0 y0 `uc  1 p 1 19 ]
+[v setAddrWindow@x1 x1 `uc  1 p 1 20 ]
+[v setAddrWindow@y1 y1 `uc  1 p 1 21 ]
+"342
+[v setAddrWindow@x0 x0 `uc  1 a 1 22 ]
+"353
+} 0
+"157
+[v _write_data write_data `(v  1 e 0 0 ]
+{
+[v write_data@data_ data_ `uc  1 a 1 wreg ]
+[v write_data@data_ data_ `uc  1 a 1 wreg ]
+"159
+[v write_data@data_ data_ `uc  1 a 1 18 ]
+"163
+} 0
+"146
+[v _write_command write_command `(v  1 e 0 0 ]
+{
+[v write_command@cmd_ cmd_ `uc  1 a 1 wreg ]
+[v write_command@cmd_ cmd_ `uc  1 a 1 wreg ]
+"148
+[v write_command@cmd_ cmd_ `uc  1 a 1 18 ]
+"155
+} 0
+"137
+[v _spiwrite spiwrite `(v  1 e 0 0 ]
+{
+[v spiwrite@spidata spidata `uc  1 a 1 wreg ]
+"139
+[v spiwrite@x x `uc  1 a 1 16 ]
+"137
+[v spiwrite@spidata spidata `uc  1 a 1 wreg ]
+"140
+[v spiwrite@spidata spidata `uc  1 a 1 17 ]
+"144
+} 0
+"32 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/I2C_Support.c
+[v _DS1621_Read_Temp DS1621_Read_Temp `(i  1 e 2 0 ]
+{
+"36
+[v DS1621_Read_Temp@Data_Ret Data_Ret `i  1 a 2 22 ]
+"34
+[v DS1621_Read_Temp@Device Device `uc  1 a 1 25 ]
+"35
+[v DS1621_Read_Temp@Cmd Cmd `uc  1 a 1 24 ]
+"46
+} 0
+"16 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/I2C_Soft.c
+[v _I2C_Read I2C_Read `(uc  1 e 1 0 ]
+{
+[v I2C_Read@ack ack `uc  1 a 1 wreg ]
+"18
+[v I2C_Read@inByte inByte `uc  1 a 1 18 ]
+[v I2C_Read@n n `uc  1 a 1 17 ]
+"16
+[v I2C_Read@ack ack `uc  1 a 1 wreg ]
+"19
+[v I2C_Read@ack ack `uc  1 a 1 16 ]
+"35
+} 0
+"53
+[v _i2cNack i2cNack `(v  1 e 0 0 ]
+{
+"57
+} 0
+"59
+[v _i2cAck i2cAck `(v  1 e 0 0 ]
+{
+"65
+} 0
+"75
+[v _I2C_ReStart I2C_ReStart `(v  1 e 0 0 ]
+{
+"82
+} 0
+"81 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Main.c
+[v _Do_Init Do_Init `(v  1 e 0 0 ]
+{
+"105
+} 0
+"97 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Fan_Support.c
+[v _Turn_Off_Fan Turn_Off_Fan `(v  1 e 0 0 ]
+{
+"104
+} 0
+"464 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+"1500
+[v printf@idx idx `uc  1 a 1 29 ]
+"528
+[v printf@val val `ul  1 a 4 42 ]
+[u S2130 . 4 `ul 1 vd 4 0 `d 1 integ 3 0 ]
+"526
+[v printf@tmpval tmpval `S2130  1 a 4 34 ]
+"516
+[v printf@fval fval `d  1 a 3 48 ]
+"508
+[v printf@flag flag `us  1 a 2 46 ]
+"516
+[v printf@exp exp `i  1 a 2 40 ]
+"501
+[v printf@width width `i  1 a 2 38 ]
+"504
+[v printf@prec prec `i  1 a 2 32 ]
+"466
+[v printf@ap ap `[1]*.39v  1 a 2 30 ]
+"499
+[v printf@c c `c  1 a 1 51 ]
+"464
+[v printf@f f `*.25Cuc  1 p 2 6 ]
+"1541
+} 0
+"425
+[v _scale scale `(d  1 s 3 scale ]
+{
+[v scale@scl scl `c  1 a 1 wreg ]
+[v scale@scl scl `c  1 a 1 wreg ]
+"428
+[v scale@scl scl `c  1 a 1 72 ]
+"441
+} 0
+"185 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/utils.c
+[v _putch putch `(v  1 e 0 0 ]
+{
+[v putch@c c `uc  1 a 1 wreg ]
+[v putch@c c `uc  1 a 1 wreg ]
+[v putch@c c `uc  1 a 1 16 ]
+"189
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 18 ]
+"15
+} 0
+"409 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+[v _fround fround `(d  1 s 3 fround ]
+{
+[v fround@prec prec `uc  1 a 1 wreg ]
+[v fround@prec prec `uc  1 a 1 wreg ]
+"413
+[v fround@prec prec `uc  1 a 1 75 ]
+"418
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 20 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 16 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 18 ]
+"53
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"11
+[v ___awmod@sign sign `uc  1 a 1 65 ]
+[v ___awmod@counter counter `uc  1 a 1 64 ]
+"8
+[v ___awmod@dividend dividend `i  1 p 2 60 ]
+[v ___awmod@divisor divisor `i  1 p 2 62 ]
+"35
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 28 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 27 ]
+[v ___awdiv@counter counter `uc  1 a 1 26 ]
+"8
+[v ___awdiv@dividend dividend `i  1 p 2 22 ]
+[v ___awdiv@divisor divisor `i  1 p 2 24 ]
+"42
+} 0
+"60 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftdivl.c
+[v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+{
+"63
+[v __tdiv_to_l_@quot quot `ul  1 a 4 25 ]
+"62
+[v __tdiv_to_l_@exp1 exp1 `uc  1 a 1 30 ]
+[v __tdiv_to_l_@cntr cntr `uc  1 a 1 29 ]
+"60
+[v __tdiv_to_l_@f1 f1 `f  1 p 3 16 ]
+[v __tdiv_to_l_@f2 f2 `f  1 p 3 19 ]
+"101
+} 0
+"60 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fldivl.c
+[v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+{
+"63
+[v __div_to_l_@quot quot `ul  1 a 4 22 ]
+"62
+[v __div_to_l_@exp1 exp1 `uc  1 a 1 27 ]
+[v __div_to_l_@cntr cntr `uc  1 a 1 26 ]
+"60
+[v __div_to_l_@f1 f1 `d  1 p 3 16 ]
+[v __div_to_l_@f2 f2 `d  1 p 3 19 ]
+"101
+} 0
+"35 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+{
+"37
+[v ___lltoft@exp exp `uc  1 a 1 32 ]
+"35
+[v ___lltoft@c c `ul  1 p 4 24 ]
+"46
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"11
+[v ___llmod@counter counter `uc  1 a 1 37 ]
+"8
+[v ___llmod@dividend dividend `ul  1 p 4 29 ]
+[v ___llmod@divisor divisor `ul  1 p 4 33 ]
+"26
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"11
+[v ___lldiv@quotient quotient `ul  1 a 4 24 ]
+"12
+[v ___lldiv@counter counter `uc  1 a 1 28 ]
+"8
+[v ___lldiv@dividend dividend `ul  1 p 4 16 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 20 ]
+"31
+} 0
+"20 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+{
+[v ___ftsub@f1 f1 `f  1 p 3 0 ]
+[v ___ftsub@f2 f2 `f  1 p 3 3 ]
+"27
+} 0
+"86 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 87 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 86 ]
+[v ___ftadd@sign sign `uc  1 a 1 85 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 76 ]
+[v ___ftadd@f2 f2 `f  1 p 3 79 ]
+"148
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+{
+[v ___ftneg@f1 f1 `f  1 p 3 16 ]
+"20
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 16 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 19 ]
+"13
+} 0
+"177 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/utils.c
+[v _Init_UART Init_UART `(v  1 e 0 0 ]
+{
+"183
+} 0
+"73 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\USART\uopen.c
+[v _OpenUSART OpenUSART `(v  1 e 0 0 ]
+{
+[v OpenUSART@config config `uc  1 a 1 wreg ]
+[v OpenUSART@config config `uc  1 a 1 wreg ]
+[v OpenUSART@spbrg spbrg `ui  1 p 2 16 ]
+"75
+[v OpenUSART@config config `uc  1 a 1 18 ]
+"143
+} 0
+"18 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Interrupt.c
+[v _Init_Interrupt Init_Interrupt `(v  1 e 0 0 ]
+{
+"39
+} 0
+"169 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/utils.c
+[v _Init_ADC Init_ADC `(v  1 e 0 0 ]
+{
+"174
+} 0
+"10 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/I2C_Soft.c
+[v _I2C_Init I2C_Init `(v  1 e 0 0 ]
+{
+[v I2C_Init@c c `ul  1 p 4 16 ]
+"14
+} 0
+"12 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/I2C_Support.c
+[v _DS1621_Init DS1621_Init `(v  1 e 0 0 ]
+{
+"14
+[v DS1621_Init@Device Device `uc  1 a 1 21 ]
+"17
+} 0
+"148 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/I2C_Soft.c
+[v _I2C_Write_Cmd_Write_Data I2C_Write_Cmd_Write_Data `(v  1 e 0 0 ]
+{
+[v I2C_Write_Cmd_Write_Data@Device Device `uc  1 a 1 wreg ]
+[v I2C_Write_Cmd_Write_Data@Device Device `uc  1 a 1 wreg ]
+[v I2C_Write_Cmd_Write_Data@Cmd Cmd `uc  1 p 1 18 ]
+[v I2C_Write_Cmd_Write_Data@Data_Out Data_Out `uc  1 p 1 19 ]
+"150
+[v I2C_Write_Cmd_Write_Data@Device Device `uc  1 a 1 20 ]
+"155
+} 0
+"140
+[v _I2C_Write_Cmd_Only I2C_Write_Cmd_Only `(v  1 e 0 0 ]
+{
+[v I2C_Write_Cmd_Only@Device Device `uc  1 a 1 wreg ]
+[v I2C_Write_Cmd_Only@Device Device `uc  1 a 1 wreg ]
+[v I2C_Write_Cmd_Only@Cmd Cmd `uc  1 p 1 18 ]
+"142
+[v I2C_Write_Cmd_Only@Device Device `uc  1 a 1 19 ]
+"146
+} 0
+"37
+[v _I2C_Write I2C_Write `(v  1 e 0 0 ]
+{
+[v I2C_Write@outByte outByte `uc  1 a 1 wreg ]
+"39
+[v I2C_Write@n n `uc  1 a 1 17 ]
+"37
+[v I2C_Write@outByte outByte `uc  1 a 1 wreg ]
+"40
+[v I2C_Write@outByte outByte `uc  1 a 1 16 ]
+"51
+} 0
+"84
+[v _I2C_Stop I2C_Stop `(v  1 e 0 0 ]
+{
+"90
+} 0
+"67
+[v _I2C_Start I2C_Start `(v  1 e 0 0 ]
+{
+"73
+} 0
+"98
+[v _i2cLowSda i2cLowSda `(v  1 e 0 0 ]
+{
+"103
+} 0
+"111
+[v _i2cLowScl i2cLowScl `(v  1 e 0 0 ]
+{
+"116
+} 0
+"92
+[v _i2cHighSda i2cHighSda `(v  1 e 0 0 ]
+{
+"96
+} 0
+"105
+[v _i2cHighScl i2cHighScl `(v  1 e 0 0 ]
+{
+"109
+} 0
+"155 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Fan_Support.c
+[v _Do_Change_Fan_Timer_Mode_Plus Do_Change_Fan_Timer_Mode_Plus `(v  1 e 0 0 ]
+{
+"165
+} 0
+"167
+[v _Do_Change_Fan_Timer_Mode_Minus Do_Change_Fan_Timer_Mode_Minus `(v  1 e 0 0 ]
+{
+"180
+} 0
+"72 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/utils.c
+[v _Do_Beep_Good Do_Beep_Good `(v  1 e 0 0 ]
+{
+"81
+} 0
+"115
+[v _Activate_Buzzer_2KHz Activate_Buzzer_2KHz `(v  1 e 0 0 ]
+{
+"121
+} 0
+"83
+[v _Do_Beep_Bad Do_Beep_Bad `(v  1 e 0 0 ]
+{
+"92
+} 0
+"107
+[v _Activate_Buzzer_500Hz Activate_Buzzer_500Hz `(v  1 e 0 0 ]
+{
+"113
+} 0
+"137 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Fan_Support.c
+[v _Decrease_Duty_Cycle Decrease_Duty_Cycle `(v  1 e 0 0 ]
+{
+"153
+} 0
+"61 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/utils.c
+[v _Do_Beep Do_Beep `(v  1 e 0 0 ]
+{
+"70
+} 0
+"137
+[v _do_update_pwm do_update_pwm `(v  1 e 0 0 ]
+{
+"138
+[v do_update_pwm@duty_cycle duty_cycle `uc  1 a 1 wreg ]
+"139
+[v do_update_pwm@dc_f dc_f `f  1 a 3 63 ]
+"140
+[v do_update_pwm@dc_I dc_I `i  1 a 2 67 ]
+"138
+[v do_update_pwm@duty_cycle duty_cycle `uc  1 a 1 wreg ]
+"141
+[v do_update_pwm@duty_cycle duty_cycle `uc  1 a 1 66 ]
+"148
+} 0
+"27 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+{
+[v ___lbtoft@c c `uc  1 a 1 wreg ]
+[v ___lbtoft@c c `uc  1 a 1 wreg ]
+"29
+[v ___lbtoft@c c `uc  1 a 1 27 ]
+"30
+} 0
+"44 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 55 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 59 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 54 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 45 ]
+"73
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 40 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 44 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 43 ]
+[v ___ftmul@exp exp `uc  1 a 1 39 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 30 ]
+[v ___ftmul@f2 f2 `f  1 p 3 33 ]
+"157
+} 0
+"54 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 55 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 59 ]
+[v ___ftdiv@exp exp `uc  1 a 1 58 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 54 ]
+"54
+[v ___ftdiv@f1 f1 `f  1 p 3 45 ]
+[v ___ftdiv@f2 f2 `f  1 p 3 48 ]
+"86
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 16 ]
+[v ___ftpack@exp exp `uc  1 p 1 19 ]
+[v ___ftpack@sign sign `uc  1 p 1 20 ]
+"86
+} 0
+"94 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/utils.c
+[v _Wait_Half_Sec Wait_Half_Sec `(v  1 e 0 0 ]
+{
+"96
+[v Wait_Half_Sec@k k `ui  1 a 2 16 ]
+"97
+} 0
+"131
+[v _Deactivate_Buzzer Deactivate_Buzzer `(v  1 e 0 0 ]
+{
+"135
+} 0
+"99
+[v _Activate_Buzzer Activate_Buzzer `(v  1 e 0 0 ]
+{
+"105
+} 0
+"47 C:\Users\julia\MPLABXProjects\ECE\ECE3301L\labfinal/Interrupt.c
+[v _chkisr chkisr `IIH(v  1 e 0 0 ]
+{
+"53
+} 0
+"55
+[v _TIMER1_isr TIMER1_isr `(v  1 e 0 0 ]
+{
+"61
+} 0
+"189
+[v _INT2_isr INT2_isr `(v  1 e 0 0 ]
+{
+"191
+[v INT2_isr@k k `i  1 a 2 0 ]
+"196
+} 0
+"181
+[v _INT1_isr INT1_isr `(v  1 e 0 0 ]
+{
+"183
+[v INT1_isr@k k `i  1 a 2 0 ]
+"187
+} 0
+"70
+[v _INT0_isr INT0_isr `(v  1 e 0 0 ]
+{
+"179
+} 0
+"63
+[v _force_nec_state0 force_nec_state0 `(v  1 e 0 0 ]
+{
+"67
+} 0
