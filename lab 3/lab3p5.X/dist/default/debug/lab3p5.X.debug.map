@@ -1,0 +1,51 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Thu Sep 11 12:42:13 2025
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000086
+                   .cinit    romdata   0x000086    program   0x000002
+                    dbgP0       code   0x00fd30    program   0x0002d0
+.config_300001_BUILD/DEFAULT/DEBUG/LAB3P5.O    romdata   0x300001    program   0x000001
+.config_300002_BUILD/DEFAULT/DEBUG/LAB3P5.O    romdata   0x300002    program   0x000001
+.config_300003_BUILD/DEFAULT/DEBUG/LAB3P5.O    romdata   0x300003    program   0x000001
+.config_300006_BUILD/DEFAULT/DEBUG/LAB3P5.O    romdata   0x300006    program   0x000001
+                    dbgD0      udata   0x000ef4       data   0x00000c
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000087      
+                            0x00fd30    0x00ffff      
+                            0x300001    0x300003      
+                            0x300006    0x300006      
+            860 out of 66584 program addresses used, program memory utilization is 1%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+            DELAY_ONE_SEC   0x000070    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB3\Part5\lab3p5.X\lab3p5.asm
+                 FOR_LOOP   0x000058    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB3\Part5\lab3p5.X\lab3p5.asm
+               LOOP_INNER   0x00007a    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB3\Part5\lab3p5.X\lab3p5.asm
+               LOOP_OUTER   0x000074    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB3\Part5\lab3p5.X\lab3p5.asm
+                    START   0x000000    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB3\Part5\lab3p5.X\lab3p5.asm
+               WHILE_LOOP   0x000054    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB3\Part5\lab3p5.X\lab3p5.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    START   0x000000    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB3\Part5\lab3p5.X\lab3p5.asm
+               WHILE_LOOP   0x000054    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB3\Part5\lab3p5.X\lab3p5.asm
+                 FOR_LOOP   0x000058    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB3\Part5\lab3p5.X\lab3p5.asm
+            DELAY_ONE_SEC   0x000070    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB3\Part5\lab3p5.X\lab3p5.asm
+               LOOP_OUTER   0x000074    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB3\Part5\lab3p5.X\lab3p5.asm
+               LOOP_INNER   0x00007a    program     static C:\Users\julia\MPLABXProjects\ECE\ECE3301L\LAB3\Part5\lab3p5.X\lab3p5.asm
+
+
